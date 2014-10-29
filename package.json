@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/nadbm/wearhackswebsite/issues"
   },
-  "homepage": "https://github.com/nadbm/wearhackswebsite"
+  "homepage": "https://github.com/nadbm/wearhackswebsite",
+  "dependencies": {
+    "ejs": "^1.0.0",
+    "express": "^4.10.1"
+  }
 }
