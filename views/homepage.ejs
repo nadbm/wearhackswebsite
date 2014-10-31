@@ -21,39 +21,14 @@
         <title></title>
     </head>
 
-    <body>
+    <body data-spy="scroll" data-target="#navigationbar">
         <div class="page-wrapper">
 
-<!--<header class="header-6">
-    <div class="container">
-        <div class="row">
-            <div class="navbar col-sm-12" role="navigation">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle"></button>
-                    <a class="brand" href="#"><img src="startup/common-files/icons/Infinity-Loop@2x.png" width="50" height="50" alt=""> Startup</a>
-                    <div class="social-btns">
-                        <a href="#">
-                            <div class="fui-vimeo"></div>
-                            <div class="fui-vimeo"></div>
-                        </a>
-                        <a href="#">
-                            <div class="fui-facebook"></div>
-                            <div class="fui-facebook"></div>
-                        </a>
-                        <a href="#">
-                            <div class="fui-twitter"></div>
-                            <div class="fui-twitter"></div>
-                        </a>
-                    </div>
-                </div>
-                          </div>
-        </div>
-    </div>
-</header>-->
- <header class="header-6" id="home">
+
+ <header class="header-6" >
      <div class="container">
        <div class="row">
-         <div class="navbar col-sm-12" role="navigation">
+         <div class="navbar col-sm-12 navbar-fixed-top" role="navigation">
            <div class="navbar-header">
              <button type="button" class="navbar-toggle">
              </button> <a href="/" class="brand custom-img"><img width="50" height="50" alt="" src=" /uploads/icon_58104-copy-100x100-64629.png"> <span>WearHacks</span> </a>
@@ -76,14 +51,14 @@
                 </a>
              </div>
            </div>
-              <div class="collapse navbar-collapse">
-                    <ul class="nav">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
+              <div id="navigationbar" class="collapse navbar-collapse">
+                    <ul class="nav" role="tablist">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT US</a></li>
                         <li><a href="#events">UPCOMING EVENTS</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">TEAM</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <!--<li><a href="#blog">BLOG</a></li>-->
+                        <li><a href="#team">TEAM</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </div>
 
@@ -92,7 +67,7 @@
        </div>
      </div>
    </header>
-<section class="header-6-sub" style="background-color: #26374a">
+<section id="home"class="header-6-sub" style="background-color: #26374a">
    <div class="background" >
    </div>
   
@@ -133,13 +108,30 @@
        </div>
      </div>
    </div>
- </section><section class="content-23 bg-midnight-blue">
+ </section>
+
+ <section id="about" class="content-23 bg-midnight-blue">
 	<div class="holder v-center">
 		<div>
 		    <div class="container">
 		        <div class="hero-unit hero-unit-bordered">
-		            <h1>Made in New York</h1>
+		            <h1>About Us</h1>
 		        </div>
+            <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                      <h2>Who We Are</h2>
+                      <p>WearHacks is an international non-profit organization 
+                        headquartered in Montreal, 
+                        focused on Wearable Technology and Internet of Things and the promotion of innovation in technology 
+                        all over the world. 
+                        </p>
+                        <h2>What We Do</h2>
+                        <p>We provide the hacker
+          all the tools, knowledge, support and connections, 
+          so he can build anything he can imagine 
+          (from a cool game or disruptive new device, to a solid startup).</p>
+        </div>
+        </div>
 		    </div>
 		</div>
 	</div>
@@ -207,7 +199,7 @@
    </div>
  </section>
 
-<section class="projects-3">
+<section id="contact" class="projects-3">
     <div class="container">
         <h3>We love what we do. <br> This is features of our products</h3>
 
@@ -295,29 +287,11 @@
             <script src="startup/common-files/js/jquery.backgroundvideo.min.js"></script>
             <script src="startup/common-files/js/froogaloop.min.js"></script>
             <script src="startup/common-files/js/startup-kit.js"></script>
-	    <script src="startup/common-files/js/jquery.parallax.min.js"></script>
+	          <script src="startup/common-files/js/jquery.parallax.min.js"></script>
+            <script src="startup/common-files/js/custom.js"></script>
  	    <script> 
-	    (function($) {
+	  
 
-	$('.header-6-sub .background').each(function() {
-		$(this).parallax('50%',0.3,true);
-	})
-	}(jQuery));
-
-        $(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
 
 
             </script>        

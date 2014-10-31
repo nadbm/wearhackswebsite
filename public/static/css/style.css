@@ -4,7 +4,7 @@
 }
 /* styles from flat-ui-free2.0.0-fix.less files */
 body {
-  color: #34495e;
+  color: #f938ab;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.231;
@@ -123,7 +123,7 @@ blockquote small {
   font-size: 18.004px;
   line-height: 1.722169;
   font-style: italic;
-  color: #34495e;
+  color: #f938ab;
 }
 blockquote small:before {
   content: "";
@@ -573,7 +573,7 @@ header {
 header .brand {
   font-size: 25px;
   font-weight: normal;
-  color: #34495e;
+  color: #f938ab;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800;
   letter-spacing: -1px;
@@ -822,6 +822,156 @@ body > .navbar-collapse .navbar-search .btn:hover,
 body > .navbar-collapse .navbar-form .btn-primary:hover,
 body > .navbar-collapse .navbar-search .btn-primary:hover {
   color: #fff;
+}
+/**
+ * Header 2 stylesheet  
+ * */
+.header-2 {
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.header-2 > .container {
+  position: relative;
+}
+.header-2 .navbar {
+  position: absolute;
+  z-index: 2;
+  top: 55px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.header-2 .navbar.navbar-fixed-top {
+  position: fixed;
+}
+.header-2 .navbar .brand {
+  font-size: 25px;
+  font-weight: normal;
+  color: #ffffff;
+  font-weight: 800;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.header-2 .navbar .brand img:first-child {
+  float: left;
+  margin: -10px 15px 0 0;
+}
+.header-2 .navbar .nav > li {
+  margin-left: 35px;
+}
+.header-2 .navbar .nav > li:first-child {
+  margin-left: 0;
+}
+.header-2 .navbar .nav > li > a {
+  padding: 32px 0 30px;
+  font-size: 17px;
+  font-weight: normal;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.header-2 .navbar .nav > li > a:hover,
+.header-2 .navbar .nav > li > a:focus,
+.header-2 .navbar .nav > li > a.active {
+  color: #506e8c;
+}
+.header-2 .navbar .nav > li.active > a {
+  color: #506e8c;
+}
+.header-2 .navbar .nav > li.active > a:hover,
+.header-2 .navbar .nav > li.active > a:focus,
+.header-2 .navbar .nav > li.active > a.active {
+  color: #405870;
+}
+.header-2-sub {
+  z-index: 50;
+  left: 0;
+  width: 100%;
+  position: relative;
+  padding-top: 215px;
+  padding-bottom: 115px;
+  color: white;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .header-2-sub {
+    padding-top: 165px;
+  }
+}
+.header-2-sub .hero-unit {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+.header-2-sub .hero-unit h1 {
+  margin: 0 0 18px;
+  font-size: 30px;
+  font-weight: normal;
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 40px;
+}
+.header-2-sub .hero-unit p {
+  font-size: 13px;
+  font-weight: normal;
+  color: #506e8c;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.header-2-sub .btns {
+  display: inline-block;
+  margin-top: 15px;
+}
+@media (max-width: 480px) {
+  .header-2-sub .btns {
+    margin-top: 48px;
+    display: block;
+  }
+}
+.header-2-sub .btns .btn {
+  min-width: 160px;
+  float: left;
+}
+@media (max-width: 480px) {
+  .header-2-sub .btns .btn {
+    float: none;
+    display: block;
+    margin-top: 10px;
+  }
+  .header-2-sub .btns .btn:first-child {
+    margin-top: 0;
+  }
+}
+.header-2-sub .btns .btn + .btn {
+  margin-left: 20px;
+}
+@media (max-width: 480px) {
+  .header-2-sub .btns .btn + .btn {
+    margin-left: 0;
+  }
+}
+.header-2-sub .btn.btn-inverse {
+  background-color: #3c556e;
+}
+.header-2-sub .btn.btn-inverse:hover,
+.header-2-sub .btn.btn-inverse:focus {
+  background-color: #63778b;
+}
+.header-2-sub .btn.btn-inverse:active,
+.header-2-sub .btn.btn-inverse.active {
+  background-color: #33485e;
+}
+.header-2-sub .btn.btn-danger {
+  background-color: #c0392b;
+}
+.header-2-sub .btn.btn-danger:hover,
+.header-2-sub .btn.btn-danger:focus {
+  background-color: #cd6155;
+}
+.header-2-sub .btn.btn-danger:active,
+.header-2-sub .btn.btn-danger.active {
+  background-color: #a33025;
 }
 /**
  * Header 6 stylesheet  
@@ -1085,7 +1235,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   display: block;
 }
 .header-6-sub .background {
-  background-image: url("../../images/bVsHTTk.jpg");
+  background-image: url("../../startup/common-files/img/NY_001.jpg");
   opacity: 50;
   filter: alpha(opacity=5000);
   opacity: 0.5;
@@ -1852,4 +2002,20 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
     margin-top: 20px;
     margin-bottom: -5px;
   }
+}
+/* header modification */
+#navigationbar li.active a {
+  border-bottom: 4px solid #EEE;
+}
+.header-6-sub .background {
+  background-image: url(http://i.imgur.com/bVsHTTk.jpg);
+  opacity: 0.56;
+}
+#about h2 {
+  font-size: 25px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  border-left: 5px solid white;
+  color: white;
+  opacity: 0.7;
 }

@@ -5,9 +5,39 @@
 @import '../../startup/common-files/less/common.less';
 @import '../../startup/common-files/less/helper.less';
 @import '../../startup/common-files/less/navbar.less';
+@import '../../startup/ui-kit/ui-kit-header/less/header-2.less';
 @import '../../startup/ui-kit/ui-kit-header/less/header-6.less';
 @import '../../startup/ui-kit/ui-kit-content/less/content-23.less';
 @import '../../startup/ui-kit/ui-kit-crew/less/crew-2.less';
 @import '../../startup/ui-kit/ui-kit-projects/less/project-common.less';
 @import '../../startup/ui-kit/ui-kit-projects/less/project-3.less';
 @import '../../startup/ui-kit/ui-kit-footer/less/footer-7.less';
+
+
+/* header modification */
+
+@base: #f938ab;
+
+#navigationbar {
+	li.active {
+		a{
+		border-bottom: 4px solid #EEE;
+		}
+		
+	}
+}
+.header-6-sub {
+	.background { 
+		background-image: url(http://i.imgur.com/bVsHTTk.jpg); opacity: 0.56;
+	}
+}
+#about {
+	h2 {
+		font-size: 25px;
+		padding-left:10px;
+		margin-bottom:10px;
+		border-left:5px solid white;
+		color:white;
+		opacity: 0.7;
+	}
+}
