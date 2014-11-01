@@ -12,10 +12,6 @@ try {
 }
 
 exports.subscribe = function(req, res){
-  console.log(req);
-  
-  // this does not work
-  // console.log(req.body)
 
   api.call('lists', 'subscribe', { id: "cdc5916906", email: { email: req.param('email') } }, function (error, data) {
       if (error) {
