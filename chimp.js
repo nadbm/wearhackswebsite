@@ -13,13 +13,18 @@ try {
 
 exports.subscribe = function(req, res){
 
-  api.call('lists', 'subscribe', { id: "cdc5916906", email: { email: req.param('email') } }, function (error, data) {
-      if (error) {
-        console.log(error.message);
-        res.send("error_chimp");
-      } else {
-        console.log(JSON.stringify(data));
-        res.send(JSON.stringify(data)); // Do something with your data!
-      }
-    });
+  if (req.param('email')=="" || !/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/.test(req.param('email'))) /* ' */ { 
+    res.send("format error; email : '"+ req.param('email') + "';");
+  } 
+  else {
+    api.call('lists', 'subscribe', { id: "cdc5916906", email: { email: req.param('email') } }, function (error, data) {
+        if (error) {
+          console.log(error.message);
+          res.send("error_chimp");
+        } else {
+          console.log(JSON.stringify(data));
+          res.send(JSON.stringify(data)); // Do something with your data!
+        }
+      });
+  }
 };

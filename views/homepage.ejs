@@ -25,13 +25,14 @@
         <div class="page-wrapper">
 
 
+
  <header class="header-6" >
      <div class="container">
        <div class="row">
          <div class="navbar col-sm-12 navbar-fixed-top" role="navigation">
            <div class="navbar-header">
              <button type="button" class="navbar-toggle">
-             </button> <a href="/" class="brand custom-img"><img width="50" height="50" alt="" src=" /uploads/icon_58104-copy-100x100-64629.png"> <span>WearHacks</span> </a>
+             </button> <a href="/" id="homebar" class="brand custom-img"><img width="50" height="50" alt="" src=" /uploads/icon_58104-copy-100x100-64629.png"> <span>WearHacks</span> </a>
              <div class="social-btns">
                <a class="social-holder" href="http://facebook.com/wearhacks">
                <div class="fui-facebook">
@@ -83,7 +84,7 @@
      </div>
      <div class="row">
        <div class="subscribe-form col-sm-8 col-sm-offset-2">
-         <form method="post" action="/s">
+         <form id="newsletterform" method="post" action="/s">
            <div class="input-group">
              <!-- <input type="text" class="form-control" name="sf_register_user[email]" placeholder="mr.madbyte@gmail.com"> -->
              <input type='text' class="form-control" name="email" placeholder="mr.madbyte@gmail.com">
@@ -94,24 +95,14 @@
            </div>
          </form>
        </div>
+
      </div>
-     <div class="row">
-       <div class="col-sm-10 col-sm-offset-1">
-         <!--<div class="signup-form">
-           <form method="post" action="action">
-             <div class="clearfix">
-               <input type="text" class="form-control" name="sf_register_user[email]" placeholder="Your E-mail">
-               <input type="password" class="form-control" name="sf_register_user[pwd]" placeholder="password">
-               <input type="password" class="form-control" name="sf_register_user[rpwd]" placeholder="Confirmation">
-               <button type="submit" class="btn btn-primary">Sign In
-               </button>
-             </div>
-           </form>
-         </div> -->
-       </div>
-     </div>
+     
+    
    </div>
  </section>
+ 
+
  <section id="about" class="content-15 v-center">
     <div>
         <div class="container">
@@ -119,7 +110,9 @@
               <img class="wolf center-block" src="/images/front-in-poa.png"/> 
             <div class="row">
                 <h3 class="col-sm-10 col-sm-offset-1">WearHacks is an international, student run Hackathon with primary focus on wearable and connected technologies.
+                 <div style="height:7px; background:url(images/back.png);"></div>
                 </h3>
+
             </div>
             <div class="row">
                 <div class="col-sm-6">
@@ -129,7 +122,7 @@
                         headquartered in Montreal, 
                         focused on Wearable Technology and Internet of Things and the promotion of innovation in technology 
                         all over the world. 
-                        <hr/>
+                        
                     </p>
                 </div>
                 <div class="col-sm-6">
@@ -137,10 +130,12 @@
                         <b>What we do</b> <br/> 
                         We provide hackers with all the tools, knowledge, support and connections, 
                         so they can build anything they can imagine (from a cool game or disruptive new device, to a solid startup).
-                        <hr/> 
+                        
                     </p>
                 </div>
+
             </div>
+
         </div>
     </div>
 </section>
@@ -445,13 +440,45 @@
             <script src="startup/common-files/js/froogaloop.min.js"></script>
             <script src="startup/common-files/js/startup-kit.js"></script>
 	          <script src="startup/common-files/js/jquery.parallax.min.js"></script>
-            <script src="startup/common-files/js/custom.js"></script>
+            <script src="js/custom.js"></script>
  	    <script> 
 	  
 
-
-
+       
             </script>        
+</div>
+
+
+           <!-- Modal fault -->
+<div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog customModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="fui-cross"></span>
+        <h6 class="modal-title" id="myModalLabel">Please enter a valid email!</h6>
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Oops, my bad!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal success -->
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog customModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="fui-check"></span>
+        <h6 class="modal-title" id="myModalLabel">Perfect! You're now subscribed to our mailing list.</h6>
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Oops, my bad!</button>
+      </div>
+    </div>
+  </div>
 </div>
     </body>
 </html>

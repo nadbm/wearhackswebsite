@@ -46,3 +46,44 @@
 	    opacity: 0.5;
 	}
 }
+
+.customModal {
+	margin-top: 50px;
+	.modal-footer,.modal-header {
+		text-align:center;
+		border: none;
+	}
+	@media (min-width: 400px) {
+			width: 400px;
+		}
+	.fui-cross {
+		font-size: 70px;
+    	color: @pomegranate;
+	}
+	.fui-check {
+		font-size:70px;
+		color:@emerald;
+	}
+}
+
+//Fix navbar on iphone
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px)  {
+  #homebar{ 
+	  span{
+	    font-size: 17px;
+	    left: 0px;
+	    font-weight: 600;
+	  }
+ 	  img {
+      	margin: -11px 3px 0 0;
+      }
+    }  
+}
+
+@media (max-width: 768px){
+.loaded .header-6 .navbar {
+	top: 45px;
+}
+}
