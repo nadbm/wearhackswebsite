@@ -1,4 +1,10 @@
 
+(function($) {$('.header-6-sub .background').each(function() {
+   $(this).parallax('50%',0.7,true);
+ })
+ }(jQuery));
+
+
 
 //Smooth Scroll
 

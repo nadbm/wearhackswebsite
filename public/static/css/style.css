@@ -2154,12 +2154,21 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
     top: 45px;
   }
 }
+.crew-2 {
+  padding-top: 50px;
+}
 .crew-2 .members {
   width: 67%;
   margin: auto;
+}
+.crew-2 .members .member {
+  width: 190px;
 }
 .crew-2 .members .photo-wrapper {
   width: 190px;
   height: 190px;
   margin: auto;
+}
+.footer-4 .brand {
+  font-size: 27px;
 }
