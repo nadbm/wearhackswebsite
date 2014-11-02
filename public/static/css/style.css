@@ -2169,6 +2169,15 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   height: 190px;
   margin: auto;
 }
+.crew-2 .members .position {
+  left: 19px;
+  right: initial;
+}
+.crew-2 .members .name {
+  left: 19px;
+  letter-spacing: 0;
+  bottom: 32px;
+}
 .footer-4 .brand {
   font-size: 27px;
 }
