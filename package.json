@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/nadbm/wearhackswebsite",
   "dependencies": {
+    "body-parser": "^1.9.2",
     "ejs": "^1.0.0",
     "express": "^4.10.1",
     "mailchimp": "^1.1.0"
