@@ -2164,17 +2164,20 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 .crew-2 .members .member {
   width: 190px;
 }
+.crew-2 .members .member .photo {
+  opacity: 0.7;
+}
 .crew-2 .members .photo-wrapper {
   width: 190px;
   height: 190px;
   margin: auto;
 }
 .crew-2 .members .position {
-  left: 19px;
+  left: 15px;
   right: initial;
 }
 .crew-2 .members .name {
-  left: 19px;
+  left: 15px;
   letter-spacing: 0;
   bottom: 32px;
 }
