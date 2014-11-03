@@ -2153,6 +2153,12 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   .loaded .header-6 .navbar {
     top: 45px;
   }
+  .loaded .header-6 .navbar .social-btns {
+    margin-right: 10px;
+  }
+  .loaded .header-6 .navbar .social-btns .social-holder {
+    margin-left: 5px;
+  }
 }
 .crew-2 {
   padding-top: 50px;
