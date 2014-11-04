@@ -3,7 +3,7 @@
 
 var MailChimpAPI = require('mailchimp').MailChimpAPI;
 
-var apiKey = '146e851b1e2c594e9ab9139636dadb83-us9';
+var apiKey = process.env.API_KEY;
 
 try { 
   var api = new MailChimpAPI(apiKey, { version : '2.0' });
@@ -17,7 +17,7 @@ exports.subscribe = function(req, res){
     res.send("format error; email : '"+ req.param('email') + "';");
   } 
   else {
-    api.call('lists', 'subscribe', { id: "cdc5916906", email: { email: req.param('email') } }, function (error, data) {
+    api.call('lists', 'subscribe', { id: process.env.LIST_ID, email: { email: req.param('email') } }, function (error, data) {
         if (error) {
           console.log(JSON.stringify(data));
           res.send("error "+error.message);
