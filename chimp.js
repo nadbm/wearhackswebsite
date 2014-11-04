@@ -19,8 +19,8 @@ exports.subscribe = function(req, res){
   else {
     api.call('lists', 'subscribe', { id: "cdc5916906", email: { email: req.param('email') } }, function (error, data) {
         if (error) {
-          console.log(error.message);
-          res.send("error_chimp");
+          console.log(JSON.stringify(data));
+          res.send("error "+error.message);
         } else {
           console.log(JSON.stringify(data));
           res.send(JSON.stringify(data)); // Do something with your data!

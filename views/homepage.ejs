@@ -84,7 +84,7 @@
      <div class="row">
        <div class="subscribe-form col-sm-8 col-sm-offset-2">
          <form id="newsletterform" method="post" action="/s">
-           <div class="input-group">
+           <div id="newsletterform_input" class="input-group">
              <!-- <input type="text" class="form-control" name="sf_register_user[email]" placeholder="mr.madbyte@gmail.com"> -->
              <input type='text' class="form-control" name="email" placeholder="mr.madbyte@gmail.com">
              <!-- <input type="hidden" name="sf_register_user[subscribe]" value="true"> --> <span class="input-group-btn">
@@ -115,13 +115,15 @@
             </div>
             <div class="row">
                 <div class="col-sm-6">
-                    <p> <b>Who are we</b> <br/>
-                        We are a diverse group of indivduals extremely passionate about ubiquitous computing from Montreal, Canada.
+                    <h5>Who are we</h5> 
+                    <p> 
+                        We are a diverse group of individuals extremely passionate about ubiquitous computing from Montreal, Canada.
                     </p>
                 </div>
                 <div class="col-sm-6">
+                    <h5>What we do</h5>
                     <p>
-                        <b>What we do</b> <br/>
+                         
                         We organize MASSIVE wearable/connected hardware hackathons around the 
                         globe. 
                         We provide hackers with devices, tools and support in order to promote innovation.
@@ -235,10 +237,11 @@
              <div class="photo" style="background-size:229px">
                <img alt="" src="uploads/montreal.jpg" >
              </div>
-             <!--<a href="#">-->
+             <a href="http://montreal.wearhacks.com">
              <div class="overlay">
                <span class="fui-resize"></span>
              </div>
+             </a>
            </div>
            <div class="info">
              <div class="name">
@@ -602,7 +605,7 @@
       </div>
       
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Oops, my bad!</button>
+        <button type="button" class="btn btn-block btn-lg btn-danger"  data-dismiss="modal">Oops, my bad!</button>
       </div>
     </div>
   </div>
@@ -613,12 +616,11 @@
     <div class="modal-content">
       <div class="modal-header">
         <span class="fui-check"></span>
-        <h6 class="modal-title" id="myModalLabel">Perfect!<p> We need to confirm your e-mail address.
-To complete the subscription process, please click the link in the email we just sent you.</p></h6>
+        <h6 class="modal-title" id="myModalLabel"></h6>
       </div>
       
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Oops, my bad!</button>
+        <button type="button" class="btn btn-block btn-lg btn-primary"  data-dismiss="modal">Oops, my bad!</button>
       </div>
     </div>
   </div>

@@ -2171,7 +2171,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   width: 190px;
 }
 .crew-2 .members .member .photo {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 .crew-2 .members .photo-wrapper {
   width: 190px;
@@ -2181,12 +2181,19 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 .crew-2 .members .position {
   left: 15px;
   right: initial;
+  text-shadow: 1px 1px 7px black;
 }
 .crew-2 .members .name {
   left: 15px;
   letter-spacing: 0;
   bottom: 32px;
+  text-shadow: 1px 1px 7px black;
 }
 .footer-4 .brand {
   font-size: 27px;
+}
+#successModal .modal-title p,
+#errorModal .modal-title p {
+  font-size: 15px;
+  margin-top: 10px;
 }

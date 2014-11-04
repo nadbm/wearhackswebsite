@@ -102,7 +102,7 @@ and (max-device-width : 568px)  {
 		.member {
 			width:190px;
 			.photo {
-				opacity:0.7;
+				opacity:0.5;
 			}
 		}	
 		.photo-wrapper {
@@ -114,15 +114,23 @@ and (max-device-width : 568px)  {
 		.position {
 			left:15px;
 			right:initial;
+			text-shadow: 1px 1px 7px black;
 		}
 		.name {
 			left:15px;
 			letter-spacing:0;
 			bottom:32px;
+			text-shadow: 1px 1px 7px black;
 		}
 	}
 
 }
 .footer-4 .brand {
-font-size: 27px;
+	font-size: 27px;
 }
+#successModal,#errorModal {
+	.modal-title p {
+		font-size: 15px;
+		margin-top:10px;
+	}	
+} 	

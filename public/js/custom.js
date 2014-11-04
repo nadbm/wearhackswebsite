@@ -43,15 +43,25 @@ $("#newsletterform").submit(function( event ) {
         if(data.indexOf("format")>-1) {
             $('#errorModal .modal-title').text("\""+term+"\""+" is not a valid email. ");
             $('#errorModal .modal-footer button').text("Oops! My bad!");
-        } else {
-            $('#errorModal .modal-title').text("Yikes! Something went wrong. Please try again soon.");
-            $('#errorModal .modal-footer button').text("Ok");
+            $('#errorModal').modal();
+            $('#newsletterform_input').addClass("has-error");
+        } else if(data.indexOf("already subscribed")>-1){
+           $('#successModal .modal-title').text("You're already subscribed!");
+           $('#errorModal .modal-footer button').text("Ok");
+            $('#successModal').modal();
+            $('#newsletterform_input').removeClass("has-error");
         }
-        $('#errorModal').modal();
-
+          else {
+            $('#errorModal .modal-title').text(data+"Yikes! Something went wrong. Please try again soon.");
+            $('#errorModal .modal-footer button').text("Ok");
+            $('#errorModal').modal();
+            $('#newsletterform_input').addClass("has-error");
+        }
+        
     }
     else {
-          
+          $('#successModal .modal-title').html("Perfect! <br> <p>We need to confirm your e-mail address."+
+              "To complete the subscription process, please click the link in the email we just sent you.</p>");
           $('#successModal .modal-footer button').text("Ok");
           $('#successModal').modal();
     }
