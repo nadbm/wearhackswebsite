@@ -2179,6 +2179,14 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 .partner-logo {
   display: inline-block;
   width: 100%;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.sponsor-logo:hover {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 /* header modification */
 #navigationbar li.active a {
