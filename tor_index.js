@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 app.get('/', function(req,res) {
 	console.log(req);
-    res.render('vancouver');
+    res.render('toronto');
 });
 
 app.post('/s', chimp.subscribe);

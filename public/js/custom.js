@@ -31,10 +31,10 @@ $("#newsletterform").submit(function( event ) {
   // Get some values from elements on the page:
   var $form = $( this ); //the submit action belongs to the form
   var term = $form.find( "input[name='email']" ).val();
+  var baseVal = $form.find("input[name='base']").val();
   var url = $form.attr( "action" );
- 
   // Send the data using post
-  var posting = $.post( url, {email: term } );
+  var posting = $.post( url, {email: term, base: baseVal } );
  
   // Put the results in a div
   posting.done(function( data ) {
