@@ -18,7 +18,7 @@ app.get('/', function(req,res) {
     res.render('vancouver');
 });
 
-//app.post('/s', chimp.subscribe);
+app.post('/s', chimp.subscribe);
 
 app.listen(process.env.PORT || 3000, function() {
   console.log("listening on 3000");
