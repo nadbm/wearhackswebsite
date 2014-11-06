@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-        <link rel="shortcut icon" href="startup/flat-ui/images/favicon.ico">
+        <link rel="shortcut icon" href="/favicon.ico">
         
         <link rel="stylesheet" href="startup/flat-ui/bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="startup/flat-ui/css/flat-ui.css">
@@ -32,7 +32,7 @@
          <div class="navbar col-sm-12 navbar-fixed-top" role="navigation">
            <div class="navbar-header">
              <button type="button" class="navbar-toggle">
-             </button> <a href="/" id="homebar" class="brand custom-img"><img width="50" height="50" alt="" src=" /uploads/icon_58104-copy-100x100-64629.png"> <span>WearHacks</span> </a>
+             </button> <a href="/" id="homebar" class="brand custom-img"> <span>WearHacks</span> </a>
              <div class="social-btns">
                <a class="social-holder" href="http://facebook.com/wearhacks">
                <div class="fui-facebook">
@@ -75,7 +75,10 @@
    <div class="container">
      <div class="row">
        <div class="col-sm-8 col-sm-offset-2">
-         <h3><b><font face="Droid Sans, sans-serif">&lt; WearHacks &gt;</font></b></h3>
+         <div class="row">
+              <h1 class="logo"><a href="" class="logo-link"></a></h1> 
+          </div>
+         
          <div class="row">
            <p class="lead col-sm-10 col-sm-offset-1">Promoting innovation &amp; entrepreneurship by empowering Hackers around the globe. &nbsp;</p>
          </div>
@@ -101,10 +104,10 @@
  
 
  <section id="about" class="content-15 v-center">
+    
     <div>
         <div class="container">
-            <div class="row">
-              <h1 class="wolf"></h1> 
+            
             <div class="row">
                 <h3 class="col-sm-8 col-sm-offset-2">WearHacks is an international non-profit organization and the largest connected technology and wearable developer platform.
                  <div style="height:7px; background:url(images/back.png);"></div>
@@ -253,11 +256,13 @@
  </section>
 
 <section >
-
+ <div class="row"> 
+  <div class="main-title">
+    <h3 >Our Past Sponsors</h3>
+    </div> 
+  </div>
   <div class="container">
-  <div class="row"> <div class="col-sm-8 col-sm-offset-2"><h2 class="main-title">OUR PREVIOUS SPONSORS</h2>
-      <hr/>
-    </div> </div>
+
   <div class="row"> <div class="col-sm-10 col-sm-offset-1"><%= include partials/sponsors.ejs %></div> </div>  
   </div>
 </section>

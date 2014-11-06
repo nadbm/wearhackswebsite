@@ -2179,23 +2179,36 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 .partner-logo {
   display: inline-block;
   width: 100%;
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  filter: grayscale(100%);
 }
-.sponsor-logo:hover {
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  filter: grayscale(0%);
+@media (min-width: 400px) {
+  .sponsor-logo,
+  .partner-logo {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+  .sponsor-logo:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
 }
 /* header modification */
 #navigationbar li.active a {
   border-bottom: 4px solid #EEE;
 }
+@media (min-width: 768px) {
+  .loaded .header-6 .navbar {
+    top: 45px;
+  }
+}
 .content-15 {
   background-color: #F7F7F7;
   padding-bottom: 20px;
   padding-top: 50px;
+}
+.header-6-sub {
+  padding-top: 120px;
 }
 .header-6-sub .background {
   background-image: url(/images/bVsHTTk.jpg);
@@ -2210,11 +2223,29 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   opacity: 0.7;
 }
 #about .wolf {
-  background: url(/images/front-in-poa.png);
-  height: 200px;
+  background: url(http://montreal.wearhacks.com/images/front-in-poa.png) no-repeat;
+  display: block;
+  background-size: 90%;
+  padding-bottom: 53.125%;
+  margin: 3.75rem auto;
+}
+.logo {
+  width: 50rem;
+  max-width: 80%;
+  margin: auto;
+}
+.logo-link {
+  display: block;
+  padding-bottom: 53.125%;
+  background: url(/images/front-in-poa.png) no-repeat;
   background-position: center;
-  background-size: 16%;
-  background-repeat: no-repeat;
+  background-size: 90%;
+}
+@media screen and (min-width: 37.5rem) {
+  .logo-link {
+    margin: auto;
+    margin-top: 3.75rem;
+  }
 }
 .customModal {
   margin-top: 50px;
@@ -2258,10 +2289,15 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
     margin-left: 5px;
   }
 }
-h2.main-title {
-  color: #3FA6EC;
+.main-title {
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 80px;
+}
+.main-title h3 {
+  color: white;
   text-align: center;
-  text-shadow: 0px 1px 2px #2c3e50;
 }
 .crew-2 {
   padding-top: 50px;
