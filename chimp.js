@@ -17,6 +17,8 @@ exports.subscribe = function(req, res){
     res.send("format error; email : '"+ req.param('email') + "';");
   } 
   else {
+    //api.call('lists', 'subscribe', { id: process.env.LIST_ID, email: { email: req.param('email') } }, function (error, data) {
+    if (req.param('base') == 'main') {
     api.call('lists', 'subscribe', { id: process.env.LIST_ID, email: { email: req.param('email') } }, function (error, data) {
         if (error) {
           console.log(JSON.stringify(data));
@@ -26,5 +28,30 @@ exports.subscribe = function(req, res){
           res.send(JSON.stringify(data)); // Do something with your data!
         }
       });
+     }
+     else if (req.param('base') == 'van') {
+    api.call('lists', 'subscribe', { id: process.env.VAN_LIST_ID, email: { email: req.param('email') } }, function (error, data) {
+        if (error) {
+          console.log(JSON.stringify(data));
+          res.send("error "+error.message);
+        } else {
+          console.log(JSON.stringify(data));
+          res.send(JSON.stringify(data)); // Do something with your data!
+        }
+      });
+     }
+
+     else if (req.param('base') == 'tor') {
+    api.call('lists', 'subscribe', { id: process.env.TOR_LIST_ID, email: { email: req.param('email') } }, function (error, data) {
+        if (error) {
+          console.log(JSON.stringify(data));
+          res.send("error "+error.message);
+        } else {
+          console.log(JSON.stringify(data));
+          res.send(JSON.stringify(data)); // Do something with your data!
+        }
+      });
+     }
+
   }
 };
