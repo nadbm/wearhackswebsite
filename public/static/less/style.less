@@ -27,12 +27,18 @@
 		
 	}
 }
+.loaded .header-6 .navbar {
+    @media (min-width: 768px) {
+	top:45px;
+	}
+}
 .content-15 {
 	background-color: #F7F7F7;
 	padding-bottom:20px;	
 	padding-top:50px;
 }
 .header-6-sub {
+	padding-top:120px;
 	.background { 
 		background-image: url(/images/bVsHTTk.jpg); opacity: 0.56;
 	}
@@ -47,13 +53,31 @@
 		opacity: 0.7;
 	}
 	.wolf {	
-	   background: url(/images/front-in-poa.png);
-		height: 200px;
-		background-position: center;
-		background-size: 16%;
-		background-repeat: no-repeat;
+	   background: url(http://montreal.wearhacks.com/images/front-in-poa.png) no-repeat;
+	   display:block;
+		background-size: 90%;
+		padding-bottom: 53.125%;
+		margin: 3.75rem auto;
 	}
 }
+
+.logo {
+  width: 50rem;
+  max-width: 80%;
+  margin: auto; }
+
+.logo-link {
+  display: block;
+  padding-bottom: 53.125%;
+  background: url(/images/front-in-poa.png) no-repeat;
+  background-position: center;
+  background-size: 90%; }
+  @media screen and (min-width: 37.5rem) {
+    .logo-link {
+      margin:  auto;
+      margin-top: 3.75rem } }
+      
+
 
 .customModal {
 	margin-top: 50px;
