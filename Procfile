@@ -1,1 +1,1 @@
-web: node index.js
+web: node van_index.js
