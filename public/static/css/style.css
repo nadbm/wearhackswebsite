@@ -27,6 +27,7 @@ a {
 a:hover {
   color: #1abc9c;
   text-decoration: none;
+  cursor: pointer;
 }
 h1,
 .h1 {
