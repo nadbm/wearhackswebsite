@@ -1,9 +1,12 @@
-/*
-(function($) {$('.header-6-sub .background').each(function() {
-   $(this).parallax('50%',0.7,true);
+
+(function($) {$('.header-10-sub .background').each(function() {
+  if(! isMobile.any())
+   $(this).parallax('60%',0.7,true);
+  else
+    $(this).css('background-attachment','initial');
  })
  }(jQuery));
-*/
+
 
 
 //Smooth Scroll

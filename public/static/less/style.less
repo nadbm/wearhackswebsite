@@ -7,11 +7,13 @@
 @import '../../startup/common-files/less/navbar.less';
 @import '../../startup/ui-kit/ui-kit-header/less/header-2.less';
 @import '../../startup/ui-kit/ui-kit-header/less/header-6.less';
+@import '../../startup/ui-kit/ui-kit-header/less/header-10.less';
 @import '../../startup/ui-kit/ui-kit-content/less/content-23.less';
 @import '../../startup/ui-kit/ui-kit-content/less/content-15.less';
 @import '../../startup/ui-kit/ui-kit-crew/less/crew-2.less';
 @import '../../startup/ui-kit/ui-kit-projects/less/project-common.less';
 @import '../../startup/ui-kit/ui-kit-projects/less/project-3.less';
+@import '../../startup/ui-kit/ui-kit-projects/less/project-4.less';
 @import '../../startup/ui-kit/ui-kit-footer/less/footer-7.less';
 @import '../../startup/ui-kit/ui-kit-footer/less/footer-4.less';
 @import '_partials_sponsors.less';
@@ -177,3 +179,89 @@ and (max-device-width : 568px)  {
 		margin-top:10px;
 	}	
 } 	
+
+.projects-4 {	
+	.photo-wrapper {
+		background-size: 100%;
+		background-position: 50%;
+		background-repeat: no-repeat;
+	}
+	@media(min-width: 768px) {
+		.photo-wrapper {
+		background-size: 150%;
+		background-position: 50%;
+		background-repeat: no-repeat;
+		}
+	}
+	.photo-wrapper:hover {
+		 opacity: .5;
+	    transition: opacity .5s ease-out;
+	    -moz-transition: opacity .5s ease-out;
+	    -webkit-transition: opacity .5s ease-out;
+	    -o-transition: opacity .5s ease-out;
+	}
+	.projects .info {
+	text-align:center;
+	}
+
+	.event-montreal {
+			padding-top:20px;
+			padding-bottom:20px;
+			-webkit-transition: background-color 500ms linear;
+		    -moz-transition: background-color 500ms linear;
+		    -o-transition: background-color 500ms linear;
+		    -ms-transition: background-color 500ms linear;
+		    transition: background-color 500ms linear;
+			.stats {
+			margin: auto;
+			width: 482px;
+			}
+			
+			
+			.title {
+				margin-top:20px;
+			}
+			.circle {
+			border-radius: 50%;
+			width: 90px;
+			height: 90px;
+			text-align: center;
+			color: white;
+			font-size: large;
+			padding-top: 35px;
+			margin-bottom: 10px;
+			
+		}
+		.data {
+			float: left;
+			padding: 6px;
+			text-align: center;
+		}
+		.description {
+			margin-top:20px;
+		}
+		@media only screen 
+			and (min-device-width : 320px) 
+			and (max-device-width : 568px){
+				.stats {
+				margin: auto;
+				width: 243px;
+				}
+			}
+		@media(max-width: 768px) {
+		.stats {
+		margin: auto;
+				width: 217px;
+		}
+	}
+	}
+	.event-montreal:hover {
+
+		background-color:#EEE;
+		   -webkit-transition: background-color 500ms linear;
+		    -moz-transition: background-color 500ms linear;
+		    -o-transition: background-color 500ms linear;
+		    -ms-transition: background-color 500ms linear;
+		    transition: background-color 500ms linear;
+	}
+}
