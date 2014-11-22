@@ -171,7 +171,7 @@ and (max-device-width : 568px)  {
 }
 }
 .main-title {
-	background-color: black;
+	background-color: @midnight-blue;
 	padding-top: 12px;
 	padding-bottom: 5px;
 	margin-bottom: 80px;
@@ -179,6 +179,11 @@ and (max-device-width : 568px)  {
 		color:white;
 		text-align: center;
 	}
+}
+@media (max-width:480px) {
+.main-title {
+	margin-bottom: 40px;
+}
 }
 
 .crew-2 {
@@ -212,7 +217,7 @@ and (max-device-width : 568px)  {
 	}
 
 }
-
+//footer
 .footer-4 .brand {
 	font-size: 27px;
 }
@@ -222,6 +227,7 @@ and (max-device-width : 568px)  {
 		margin-top:10px;
 	}	
 } 	
+
 
 .projects-4 {	
 	.photo-wrapper {
@@ -326,3 +332,56 @@ and (max-device-width : 568px)  {
 		padding-bottom: 30px;
 		color: #a1a9b1;
 }
+
+//footer 
+.footer-7 .social-btns {
+	position:relative;
+	text-align:center;
+	top:0px;
+	right:0px;
+}
+@media (max-width : 568px)  {
+	.footer-7 .social-btns {
+		position:relative;
+		text-align:center;
+		top:0px;
+		margin-left:0px;
+	}
+
+}
+//Header-10 addition
+
+.header-10-sub {
+	ul, li { margin-left: 0; padding-left: 0; list-style-type: none }
+	.unique li {
+	width: 25%;
+	float: left;
+	padding: 2%;
+	list-style-type:none;
+	}
+	h5{
+	color:white;
+	}
+	.uniqueIcon {
+		width: 100%;
+		height: 100px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	p {
+	 font-size: 12px;
+	}
+	.unique {
+		padding-bottom:20px;
+	}
+	
+}
+@media (max-width : 568px) {
+		.header-10-sub .unique li {
+			width: 50%;
+		}
+		.header-10-sub .uniqueIcon {
+			height:60px;
+		}
+	}
