@@ -81,3 +81,8 @@ $("#newsletterform").submit(function( event ) {
 
  ga('create', 'UA-56751789-1', 'auto');
  ga('send', 'pageview');
+
+
+ $(function() {
+    $('.updateme').tooltip();
+});

@@ -2566,9 +2566,20 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 .header-6-sub {
   padding-top: 120px;
 }
+.header-6-sub .signup-form {
+  margin-top: 10%;
+}
 .header-6-sub .background {
   background-image: url(/images/bVsHTTk.jpg);
   opacity: 0.56;
+}
+.header-6-sub .signup-form form .form-control {
+  width: 70.5%;
+}
+@media (max-width: 480px) {
+  .header-6-sub .signup-form form .form-control {
+    width: 100%;
+  }
 }
 #about h2 {
   font-size: 25px;
@@ -2715,6 +2726,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   text-align: center;
 }
 .projects-4 .event-montreal {
+  border-radius: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
   -webkit-transition: background-color 500ms linear;

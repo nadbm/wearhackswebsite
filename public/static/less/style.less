@@ -41,8 +41,19 @@
 }
 .header-6-sub {
 	padding-top:120px;
+	.signup-form {
+		margin-top:10%;
+	}
 	.background { 
 		background-image: url(/images/bVsHTTk.jpg); opacity: 0.56;
+	}
+	.signup-form form .form-control {
+		width:70.5%;
+	}
+	@media (max-width: 480px) {
+	.signup-form form .form-control {
+		width:100%;
+	}
 	}
 }
 #about {
@@ -99,6 +110,8 @@
 		color:@emerald;
 	}
 }
+
+
 
 //Fix navbar on iphone
 @media only screen 
@@ -205,6 +218,7 @@ and (max-device-width : 568px)  {
 	}
 
 	.event-montreal {
+			border-radius:20px;
 			padding-top:20px;
 			padding-bottom:20px;
 			-webkit-transition: background-color 500ms linear;

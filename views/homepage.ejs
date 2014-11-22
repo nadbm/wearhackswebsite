@@ -87,16 +87,20 @@
          </div>
        </div>
      </div>
+     
      <div class="row">
-       <div class="subscribe-form col-sm-8 col-sm-offset-2">
-         <form id="newsletterform" method="post" action="/s">
-           <div id="newsletterform_input" class="input-group">
-             <input type='text' class="form-control" name="email" placeholder="Wolfie@hacking.com">
-             <input type="hidden" name="base" value="main"> <span class="input-group-btn">
-             <button class="btn btn-primary" type="submit">Keep Me Updated
-             </button> </span>
-           </div>
-         </form>
+     <div class="col-sm-8 col-sm-offset-2">
+
+              <div class=" signup-form">
+              <p>Be the first to know all about WearHacks’ next events and get exclusive discounts:</p>
+                <form id="newsletterform" method="post" action="/s">
+                  <div class="clearfix">
+                    
+                    <input type="text" class="form-control" placeholder="Wolfie@hacking.com">
+                    <button type="submit" class="btn btn-danger">Sign Up</button>
+                  </div>
+                </form>
+              </div>
        </div>
 
      </div>
@@ -141,7 +145,11 @@ all over the world.
         </div>
     </div>
 </section>
-
+<footer id="team" class="footer-4 bg-midnight-blue">
+        <div class="container">
+          <a class="brand" data-toggle="modal" data-target=".bs-example-modal-lg" href="#">Our Amazing Team &nbsp; <span class="glyphicon glyphicon-new-window"></span></a>
+        </div>
+</footer>
  <section class="header-10-sub v-center dm-controlsView-holder" style="background-color: #1b1f23">
    <div class="background" style="background-image: url(/images/hack_montreal.jpg);background-attachment:fixed; backopacity: 0.19">
      &nbsp;
@@ -215,7 +223,7 @@ all over the world.
         <div class="event-montreal">
           
             <div class="title text-center col-sm-6">
-                     <a href="http://montreal.wearhacks.com"><h4>WearHacks 2014</h4>
+                     <a href="http://montreal.wearhacks.com"><h4>WearHacks Montreal 2014</h4>
 
                     <p>
                       Biggest Wearable Hackathon in North-America
@@ -252,17 +260,14 @@ all over the world.
   </div>
   <div class="container">
 
-  <div class="row"> <div class="col-sm-10 col-sm-offset-1"><%= include partials/sponsors.ejs %></div> </div>  
+  <div class="row"> <div class="col-sm-10 col-sm-offset-1"><%= include partials/sponsors.ejs %></div> 
+  </div>  
   </div>
 </section>
 
  <hr>
 
-<footer id="team" class="footer-4 bg-midnight-blue">
-        <div class="container">
-          <a class="brand" data-toggle="modal" data-target=".bs-example-modal-lg" href="#">Our Amazing Team &nbsp; <span class="glyphicon glyphicon-new-window"></span></a>
-        </div>
-</footer>
+
 
 <footer id="contact"  class="footer-7 ">
     <div  class="container">
@@ -294,6 +299,7 @@ all over the world.
             <script src="startup/common-files/js/startup-kit.js"></script>
 	          <script src="startup/common-files/js/jquery.parallax.min.js"></script>
             <script src="js/custom.js"></script>
+
  	    <script> 
 	  
 
