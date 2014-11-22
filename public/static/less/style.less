@@ -10,6 +10,7 @@
 @import '../../startup/ui-kit/ui-kit-header/less/header-10.less';
 @import '../../startup/ui-kit/ui-kit-content/less/content-23.less';
 @import '../../startup/ui-kit/ui-kit-content/less/content-15.less';
+@import '../../startup/ui-kit/ui-kit-content/less/content-13.less';
 @import '../../startup/ui-kit/ui-kit-crew/less/crew-2.less';
 @import '../../startup/ui-kit/ui-kit-projects/less/project-common.less';
 @import '../../startup/ui-kit/ui-kit-projects/less/project-3.less';
@@ -17,10 +18,17 @@
 @import '../../startup/ui-kit/ui-kit-footer/less/footer-7.less';
 @import '../../startup/ui-kit/ui-kit-footer/less/footer-4.less';
 @import '_partials_sponsors.less';
+//Some custom classes
+
+.bg-wolf-blue {
+	background-color: #246b9d;
+}
+
 /* header modification */
 
 @base: #f938ab;
- 
+@wolf: #246b9d;
+
 #navigationbar {
 	li.active {
 		a{
@@ -47,14 +55,36 @@
 	.background { 
 		background-image: url(/images/bVsHTTk.jpg); opacity: 0.56;
 	}
-	.signup-form form .form-control {
-		width:70.5%;
+	.signup-form form {
+		.form-control {
+			width:70.0%;
+			::-webkit-input-placeholder {
+			    color:    #999;
+			}
+			:-moz-placeholder {
+			    color:    #999;
+			}
+			::-moz-placeholder {
+			    color:    #999;
+			}
+			:-ms-input-placeholder {
+			    color:    #999;
+			}
+		}
+		button {
+				width:28%;
+			}
+		@media (max-width: 480px){ 
+			.form-control {
+				width:100%;
+			}
+			
+			button {
+				width:100%;
+			}
+		}
 	}
-	@media (max-width: 480px) {
-	.signup-form form .form-control {
-		width:100%;
-	}
-	}
+	
 }
 #about {
 	h2 {
@@ -142,8 +172,8 @@ and (max-device-width : 568px)  {
 }
 .main-title {
 	background-color: black;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 12px;
+	padding-bottom: 5px;
 	margin-bottom: 80px;
 	h3 {
 		color:white;
@@ -226,11 +256,19 @@ and (max-device-width : 568px)  {
 		    -o-transition: background-color 500ms linear;
 		    -ms-transition: background-color 500ms linear;
 		    transition: background-color 500ms linear;
+
 			.stats {
-			margin: auto;
-			width: 482px;
+				margin: auto;
+				width: 482px;
 			}
-			
+			a {
+				color:#34495e;
+			}
+			a:hover {
+				p,h4 {
+				color:#2980b9;
+				}
+			}
 			
 			.title {
 				margin-top:20px;
@@ -245,7 +283,7 @@ and (max-device-width : 568px)  {
 			padding-top: 35px;
 			margin-bottom: 10px;
 			
-		}
+			}
 		.data {
 			float: left;
 			padding: 6px;
@@ -270,12 +308,21 @@ and (max-device-width : 568px)  {
 	}
 	}
 	.event-montreal:hover {
-
-		background-color:#EEE;
+		  -moz-box-shadow:    inset 0 0 2px @wolf;
+		   -webkit-box-shadow: inset 0 0 2px @wolf;
+		   box-shadow:         inset 0 0 2px @wolf;
+		   background-color:#ecf0f1;
 		   -webkit-transition: background-color 500ms linear;
 		    -moz-transition: background-color 500ms linear;
 		    -o-transition: background-color 500ms linear;
 		    -ms-transition: background-color 500ms linear;
 		    transition: background-color 500ms linear;
 	}
+}
+
+//Bottom signup bar
+.content-13.subscribe-form {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		color: #a1a9b1;
 }

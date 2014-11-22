@@ -144,7 +144,7 @@ startupKit.uiKitHeader._inFixedMode = function(headerClass) {
 
     if ($(headerClass + ' .navbar').hasClass('navbar-fixed-top')) {
         var s1 = $(headerClass + '-sub'),
-            s1StopScroll = s1.outerHeight() - 70,
+            s1StopScroll = s1.outerHeight()/2 - 70,
             antiflickerStopScroll = 70;
 
         if($(headerClass).outerHeight()>0){
@@ -164,7 +164,7 @@ startupKit.uiKitHeader._inFixedMode = function(headerClass) {
             $(this).data('origOpacity', $(this).css('opacity'));
         });
 
-        var headerAniStartPos = s1.outerHeight() - 120, headerAniStopPos = s1StopScroll;
+        var headerAniStartPos = s1.outerHeight()/2 - 120, headerAniStopPos = s1StopScroll;
 
         $(window).scroll(function() {
             var opacity = (s1StopScroll - $(window).scrollTop()) / s1StopScroll;

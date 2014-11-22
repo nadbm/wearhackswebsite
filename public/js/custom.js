@@ -26,7 +26,7 @@ $(function() {
   });
 });
 
-$("#newsletterform").submit(function( event ) {
+$('#newsletterform,#newsletterform2').submit(function( event ) {
  
   // Stop form from submitting normally
   event.preventDefault();

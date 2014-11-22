@@ -80,7 +80,7 @@
   display: inline-block;
   width: 100%;
 }
-@media (min-width: 400px) {
+@media (min-width: 480px) {
   .sponsor-logo,
   .partner-logo {
     -webkit-filter: grayscale(100%);
@@ -91,5 +91,54 @@
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
     filter: grayscale(0%);
+  }
+}
+@media (max-width: 480px) {
+  .partner-item-singularity {
+    width: 20%;
+  }
+  .partner-item-lowest {
+    width: 20%;
+    margin: 1% 1% 5% 5%;
+    padding: 0.5% 0.5% 1% 1%;
+    min-width: rem(100px);
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+  }
+  .partner-item-walle {
+    width: 35%;
+    margin: 1% 1% 5% 5%;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+    min-width: rem(100px);
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+  }
+  .partner-item-r2d2 {
+    width: 40%;
+    margin: 1% 2% 2% 2%;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+    min-width: rem(100px);
+    display: inline-block;
+  }
+  .partner-item-t1000 {
+    width: 50%;
+    margin: 0 1% 2% .5%;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+    min-width: rem(100px);
+  }
+  .partner-item-optimus {
+    width: 75%;
+    margin: 0 .5% 2% 2%;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+    min-width: rem(100px);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .partner-item-singularity {
+    width: 90%;
+    min-width: rem(100px);
   }
 }
