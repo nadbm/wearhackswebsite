@@ -140,9 +140,9 @@ all over the world.
            <div class="col-sm-6">
                      <h4>What we do</h4>
                     <p>
-                       We empower the hacker* all over the world with tools, resources & connections. 
+                       We empower hackers* all over the world with tools, resources and connections. We organize events, give innovators access to the latest technologies, and connect them to the right resources and people, so they can build anything they can imagine - from a tweeting lamp to a Wearables startup.<br>
 
-                        We organize events, give innovators access to the latest technologies, and connect them to the right   resources and people, so they can build anything they can imagine - from a tweeting lamp to a Wearables startup. <br>
+
                         <small>*Hacker= student, developer, engineer, entrepreneur, designer, inventor, etc. </small>
                     </p>
                 </div>
@@ -260,7 +260,7 @@ all over the world.
          
         <div class="event-montreal">
           
-            <div class="title text-center col-sm-6">
+            <div class="title text-center col-sm-5">
             <a href="http://montreal.wearhacks.com">
                     <h4>WearHacks Montreal 2014</h4>
 
@@ -270,7 +270,7 @@ all over the world.
                     
               </a>
             </div>
-            <div class=" col-sm-6">
+            <div class=" col-sm-7">
             <div class="stats">
                 <div class="data"><div class="circle bg-wolf-blue">250+</div> Hackers</div>
                 <div class="data"><div class="circle bg-wolf-blue">47</div> Projects</div>
@@ -280,21 +280,60 @@ all over the world.
                 <div class="clearfix visible-xs-block"></div>
                 </div>
             </div>
-            <div class="description text-center col-sm-7">
+            <div class="description text-center col-sm-10 col-sm-offset-1">
             <p>
             The most creative projects were featured afterwards on different innovation and tech events such as: <strong>WWTO (Toronto), MTL NewTech, and Google Montreal</strong>. Some of the winners are being mentored by <strong>Founder Fuel and Real Ventures</strong>. </p>
             </div>
-            <div class="col-sm-4 ">
-              <a target="_blank" href="http://www.cbc.ca/player/News/ID/2534355181/">
-              <div id="media">
-                <div id="mediaoverlay">
-                  CBC Coverage 
-                <span class="glyphicon glyphicon-new-window"></span>
-              </div>
-              </div>
-            </a>
+
+            <div class="mediasection col-sm-10 col-sm-offset-1">
+              <ul class="medias">  
+                  <li>
+
+                        <a target="_blank" href="http://www.cbc.ca/player/News/ID/2534355181/">
+                        <div class="mediabox">
+                          <div class="mediaoverlay">
+                         CBC Coverage 
+                          <span class="glyphicon glyphicon-new-window"></span>
+                       
+                        </div>
+                        </div>
+
+                       
+                        </a>
+                  </li>
+                  <li>
+                      <a target="_blank" href="http://www.cbc.ca/player/Radio/Local+Shows/Quebec/ID/2533111783/">
+                        <div class="mediabox" style="background-image:url(images/radio.jpg)">
+                          <div class="mediaoverlay">
+                         CBC Radio Coverage
+                          <span class="glyphicon glyphicon-new-window"></span>
+                        </div>
+                        </div>
+                  </li>
+                  <li>
+                      <a target="_blank" href="http://www.techvibes.com/blog/wearhacks-2014-09-30">
+                        <div class="mediabox" style="background-image:url(images/techvibes.jpg); background-size: contain;">
+                          <div class="mediaoverlay">
+                          TechVibes Article 
+                          <span class="glyphicon glyphicon-new-window"></span>
+                        
+                        </div>
+                        </div>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" data-toggle="modal" data-target=".interviewmodal">
+                        <div class="mediabox" style="background-image:url(images/wearewearables.jpg); background-size: contain;">
+                          <div class="mediaoverlay">
+                           WeAreWearables <br> Interview  
+                          <span class="glyphicon glyphicon-new-window"></span>
+                        </div>
+                        </div>
+                      </a>
+                  </li>
+              </ul>            
             </div>
-            <div class="clearfix visible-xs-block"></div>
+             <div class=" clearfix visible-xs-block"></div>
         </div>
     </div>
     <!--/.container-->
@@ -734,8 +773,22 @@ all over the world.
     </div>
   </div>
 </div>
+<!--Modal Interview-->
 
-
+<div class="modal fade interviewmodal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      </div>
+      <div class="modal-body">
+         
+      <!--<%= include partials/cbcvideo.ejs %>-->
+      </div>
+      
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 <!-- Modal fault -->
 <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog customModal">

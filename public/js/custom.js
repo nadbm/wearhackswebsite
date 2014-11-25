@@ -77,3 +77,12 @@ $('#newsletterform,#newsletterform2').submit(function( event ) {
  $(function() {
     $('.updateme').tooltip();
 });
+
+
+$('.interviewmodal').on('show', function () { 
+ $('div.modal-body').html('<iframe width="560" height="315" src="//www.youtube.com/embed/SbRWBkleReE" frameborder="0" '+
+      'allowfullscreen></iframe>');  
+});
+$('.interviewmodal').on('hide', function () {
+ $('div.modal-body').html('');
+});
