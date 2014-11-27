@@ -3101,3 +3101,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   -ms-transition: background-color 500ms linear;
   transition: background-color 500ms linear;
 }
+hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
