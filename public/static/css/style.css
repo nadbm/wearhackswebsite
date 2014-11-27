@@ -2830,7 +2830,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   margin: 3.75rem auto;
 }
 .logo {
-  width: 50rem;
+  width: 45rem;
   max-width: 80%;
   margin: auto;
 }
@@ -2932,6 +2932,10 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   letter-spacing: 0;
   bottom: 32px;
   text-shadow: 1px 1px 7px black;
+}
+.crew-2 .members + .members .member {
+  padding-top: 0;
+  border-top: 0;
 }
 .footer-4 .brand {
   font-size: 27px;
