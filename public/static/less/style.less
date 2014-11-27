@@ -19,6 +19,14 @@
 @import '../../startup/ui-kit/ui-kit-footer/less/footer-4.less';
 @import '_partials_sponsors.less';
 //Some custom classes
+.light-bg-link {
+	padding:10px;
+	background:rgba(0, 0, 0, 0.1);
+}
+.light-bg-link:hover {
+	border: solid 1px rgba(255, 255, 255, 0.1);
+	padding:9px;
+}
 
 .bg-wolf-blue {
 	background-color: #246b9d;
@@ -39,7 +47,7 @@
 }
 .loaded .header-6 .navbar {
     @media (min-width: 768px) {
-	top:45px;
+	top:20px;
 	}
 }
 .content-15 {
@@ -161,7 +169,7 @@ and (max-device-width : 568px)  {
 
 @media (max-width: 768px){
 .loaded .header-6 .navbar {
-	top: 45px;
+	top: 20px;
 	.social-btns {
 		margin-right:10px;
 		.social-holder {
@@ -171,14 +179,17 @@ and (max-device-width : 568px)  {
 }
 }
 .main-title {
-	background-color: @midnight-blue;
-	padding-top: 12px;
-	padding-bottom: 5px;
-	margin-bottom: 80px;
+	margin-top:50px;
+	margin-bottom:50px;
+
 	h3 {
-		color:white;
-		text-align: center;
+	font-size: 36px;
+	font-weight: 300;
+	text-align: center;
+	border-bottom: 1px solid #F5F5F5;
 	}
+
+
 }
 @media (max-width:480px) {
 .main-title {
@@ -253,77 +264,7 @@ and (max-device-width : 568px)  {
 	text-align:center;
 	}
 
-	.event-montreal {
-			border-radius:20px;
-			padding-top:20px;
-			padding-bottom:20px;
-			-webkit-transition: background-color 500ms linear;
-		    -moz-transition: background-color 500ms linear;
-		    -o-transition: background-color 500ms linear;
-		    -ms-transition: background-color 500ms linear;
-		    transition: background-color 500ms linear;
-
-			.stats {
-				margin: auto;
-				width: 482px;
-			}
-			a {
-				color:#34495e;
-			}
-			a:hover {
-				p,h4 {
-				color:#2980b9;
-				}
-			}
-			
-			.title {
-				margin-top:20px;
-			}
-			.circle {
-			border-radius: 50%;
-			width: 90px;
-			height: 90px;
-			text-align: center;
-			color: white;
-			font-size: large;
-			padding-top: 35px;
-			margin-bottom: 10px;
-			
-			}
-		.data {
-			float: left;
-			padding: 6px;
-			text-align: center;
-		}
-		.description {
-			margin-top:20px;
-		}
-		@media only screen 
-			and (min-device-width : 320px) 
-			and (max-device-width : 568px){
-				.stats {
-				margin: auto;
-				width: 243px;
-				}
-			}
-		@media(max-width: 768px) {
-		.stats {
-		margin: auto;
-				width: 217px;
-		}
-	}
-	}
-	.event-montreal:hover {
-		  -moz-box-shadow:    inset 0 0 2px @wolf;
-		   -webkit-box-shadow: inset 0 0 2px @wolf;
-		   box-shadow:         inset 0 0 2px @wolf;
-		   background-color:#ecf0f1;
-		   -webkit-transition: background-color 500ms linear;
-		    -moz-transition: background-color 500ms linear;
-		    -o-transition: background-color 500ms linear;
-		    -ms-transition: background-color 500ms linear;
-		    transition: background-color 500ms linear;
-	}
+	
 }
 
 //Bottom signup bar
@@ -389,9 +330,9 @@ and (max-device-width : 568px)  {
 		}
 	}
 .mediabox {
-	height: 100px;
-	margin-right:20px;
-	font-size: 15px;
+	height: 70px;
+	margin-left:10px;
+	margin-right:10px;
 	text-align: center;
 	background: url(/images/cbcreport.jpg);
 	background-size: cover;
@@ -399,13 +340,13 @@ and (max-device-width : 568px)  {
 	color: white;
 	background-position-y: 50%;
 	background-color: white;
-	border-radius: 5%;
+	opacity:0.8;
 	margin-top:10px;
 }
 .mediaoverlay {
-	opacity:0;
-	height:100%;
-	padding-top: 40px;	
+	opacity: 0;
+	height: 100%;
+	padding-top: 15%;
 }
 .mediaoverlay:hover {
 	background-color:rgba(39, 194, 176, 0.8);
@@ -417,19 +358,126 @@ and (max-device-width : 568px)  {
 		    transition: background-color 500ms linear;
 
 }
-.medias{
-	ul, li { margin-left: 0; padding-left: 0; list-style-type: none }
+.mediasection{
+	ul, li { margin-left: 0; padding: 0; list-style-type: none }
 	border-radius: 5%;
 	 li {
-		width:200px;
+		width:25%;
 		float:left;
 
+	}
+	p {
+		font-size:12px;
+		text-align:center;
+		font-weight:200;
 	}
 
 }
 
 @media (max-width : 568px) {
+.medias{
+		li {
+		width:50%;
+		}
 		.mediabox {
-		height: 50px;
+			margin-bottom:22px;
+		}
+		.mediaoverlay {
+			
+			opacity: 1.0;
+			height: 100%;
+			padding-top: 64%;
+		}
+		p {
+			line-height:1;
+			margin-top:2px;
 		}
 }
+}
+
+
+//Montreal event
+#pastevent{
+	background:#074e68;
+.header{
+	background: #085a78;
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+.event-montreal {
+			border-radius:20px;
+			padding-top:20px;
+			padding-bottom:20px;
+			-webkit-transition: background-color 500ms linear;
+		    -moz-transition: background-color 500ms linear;
+		    -o-transition: background-color 500ms linear;
+		    -ms-transition: background-color 500ms linear;
+		    transition: background-color 500ms linear;
+
+			.stats {
+				margin: auto;
+				width: 482px;
+			}
+			h4 {
+				color:white;
+			}
+			a {
+
+				
+				color:white;
+			}
+			a:hover {
+				p,h4 {
+				color:whitesmoke;
+				}
+
+			}
+			
+			.title {
+				margin-top:20px;
+				p{font-weight:100; color:#CCC}
+			}
+			.circle {
+			border-radius: 50%;
+			width: 90px;
+			height: 90px;
+			text-align: center;
+			color: white;
+			font-size: large;
+			padding-top: 35px;
+			margin-bottom: 10px;
+			
+			}
+		.data {
+			float: left;
+			padding: 6px;
+			text-align: center;
+			font-weight: 200;
+			color: rgb(184, 182, 182);
+		}
+		.description {
+			margin-top:20px;
+			margin-bottom:50px;
+			p {
+				color:white;
+				font-weight:100;
+			}
+		}
+		@media only screen 
+			and (min-device-width : 320px) 
+			and (max-device-width : 568px){
+				.stats {
+				margin: auto;
+				width: 243px;
+				}
+			}
+		@media(max-width: 768px) {
+		.stats {
+		margin: auto;
+				width: 217px;
+		}
+	}
+	}
+	}
+

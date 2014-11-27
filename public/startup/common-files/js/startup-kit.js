@@ -204,7 +204,7 @@ startupKit.uiKitHeader._inFixedMode = function(headerClass) {
                     });
                 } else{
                     $('.navbar', header).css({
-                        'top' : -6 + ((45 + 6) * headerZoom)
+                        'top' : -6 + ((20 + 6) * headerZoom)
                     });
                 }
             };
