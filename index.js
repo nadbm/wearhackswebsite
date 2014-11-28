@@ -21,7 +21,9 @@ app.get('/', function(req,res) {
 app.get('/ambassador-agreement', function(req,res) {
     res.render('agreement');
 });
-
+app.get('/ambassador-signup', function(req,res) {
+    res.render('signupamb');
+});
 app.post('/s', chimp.subscribe);
 
 app.listen(process.env.PORT || 3000, function() {
