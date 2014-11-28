@@ -18,6 +18,9 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', function(req,res) {
     res.render('homepage');
 });
+app.get('/ambassador-agreement', function(req,res) {
+    res.render('agreement');
+});
 
 app.post('/s', chimp.subscribe);
 
