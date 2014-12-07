@@ -3008,6 +3008,12 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
     margin-left: 0px;
   }
 }
+.footer-7:before {
+  height: 0;
+}
+.footer-7 {
+  padding-top: 90px;
+}
 .footer-7 p {
   color: #333;
 }
