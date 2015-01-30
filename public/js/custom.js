@@ -1,7 +1,16 @@
 
 (function($) {$('.header-10-sub .background').each(function() {
   if(! isMobile.any())
-   $(this).parallax('70%',0.1,true);
+   {
+    //parallax effect!         
+      $(function(){
+          $.stellar({
+            horizontalScrolling: false,
+            verticalOffset: 40
+          });
+        });
+
+   }
   else
     $(this).css('background-attachment','initial');
  })
