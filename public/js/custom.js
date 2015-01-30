@@ -1,7 +1,7 @@
 
 (function($) {$('.header-10-sub .background').each(function() {
   if(! isMobile.any())
-   $(this).parallax('60%',0.7,true);
+   $(this).parallax('70%',0.1,true);
   else
     $(this).css('background-attachment','initial');
  })
