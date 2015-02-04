@@ -32,17 +32,28 @@
 	background-color: #246b9d;
 }
 
+
 /* header modification */
 
 @base: #f938ab;
-@wolf: #246b9d;
+@wolf: #1e699c;
+@logoblack:#3a3a3c;
 
+
+.btn-wearhacks {
+	color: #ffffff;
+	background-color: @wolf;
+	border-radius:0px;
+}
 #navigationbar {
 	li.active {
 		a{
-		border-bottom: 4px solid #EEE;
+		border-bottom: 4px solid @wolf;
 		}
 		
+	}
+	li a {
+		color: @logoblack;
 	}
 }
 .loaded .header-6 .navbar {
@@ -63,23 +74,39 @@
 	.signup-form {
 		margin-top:5%;
 	}
-	.background { 
-		background-image: url(/images/bVsHTTk.jpg); opacity: 0.56;
+	.lead {
+		font-size: 20px;
+		color: @logoblack;
+		font-weight: 200;
+	}
+	.backgroundsplash { 
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+		background:url(/images/splash.jpg) 50% 50% no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+
 	}
 	.signup-form form {
 		.form-control {
 			width:70.0%;
 			::-webkit-input-placeholder {
-			    color:    #999;
+			    color:    #EEE;
 			}
 			:-moz-placeholder {
-			    color:    #999;
+			    color:    #EEE;
 			}
 			::-moz-placeholder {
-			    color:    #999;
+			    color:    #EEE;
 			}
 			:-ms-input-placeholder {
-			    color:    #999;
+			    color:    #EEE;
 			}
 		}
 		button {
@@ -122,10 +149,10 @@
 
 .logo-link {
   display: block;
-  padding-bottom: 53.125%;
+  padding-bottom: 85%;
   background: url(/images/front-in-poa.png) no-repeat;
   background-position: center;
-  background-size: 90%; }
+  background-size: 70%; }
   @media screen and (min-width: 37.5rem) {
     .logo-link {
       margin:  auto;
@@ -163,6 +190,7 @@ and (max-device-width : 568px)  {
 	    font-size: 17px;
 	    left: 0px;
 	    font-weight: 600;
+	    background-image: url(images/horizontallogo.png);
 	  }
  	  img {
       	margin: -11px 3px 0 0;
@@ -175,10 +203,15 @@ and (max-device-width : 568px)  {
 	top: 20px;
 	.social-btns {
 		margin-right:10px;
+		color:@logoblack;
 		.social-holder {
 			margin-left:5px;
 		}
 	}
+	.social-btns > * > *:first-child {
+		color:@logoblack;
+	}
+	
 }
 }
 .main-title {

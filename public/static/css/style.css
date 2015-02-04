@@ -1041,7 +1041,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   margin-left: 15px;
   font-size: 16px;
   font-weight: normal;
-  color: #cccccc;
+  color: #1e699c;
   width: 16px;
   height: 19px;
   overflow: hidden;
@@ -1060,7 +1060,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   transition: 0.25s top;
 }
 .header-6 .navbar .social-btns > * > *:first-child {
-  color: white;
+  color: #3a3a3c;
 }
 .header-6 .navbar .social-btns > *:hover > * {
   top: -100%;
@@ -1124,7 +1124,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   width: 100%;
   padding-top: 280px;
   padding-bottom: 90px;
-  background-color: #192735;
+  background-color: whitesmoke;
   overflow: hidden;
   color: #bdc3c7;
   text-align: center;
@@ -1244,9 +1244,6 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 .header-6-sub .signup-form form {
   margin: 0 auto;
   padding: 17px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
   background: white;
 }
 .header-6-sub .signup-form form .form-control,
@@ -1258,6 +1255,9 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   box-sizing: border-box;
   margin: 0 0 0 2%;
   font-size: 17px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
   font-weight: 500;
 }
 @media (max-width: 480px) {
@@ -1277,25 +1277,26 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   border-color: #dee1e3;
   font-weight: 500;
   color: #34495e;
+  border: 1px solid #bdc3c7;
 }
 .header-6-sub .signup-form form .form-control:-moz-placeholder {
-  color: #34495e;
+  color: #7f8c8d;
 }
 .header-6-sub .signup-form form .form-control::-moz-placeholder {
-  color: #34495e;
+  color: #7f8c8d;
   opacity: 1;
 }
 .header-6-sub .signup-form form .form-control:-ms-input-placeholder {
-  color: #34495e;
+  color: #7f8c8d;
 }
 .header-6-sub .signup-form form .form-control::-webkit-input-placeholder {
-  color: #34495e;
+  color: #7f8c8d;
 }
 .header-6-sub .signup-form form .form-control.placeholder {
-  color: #34495e;
+  color: #7f8c8d;
 }
 .header-6-sub .signup-form form .form-control:focus {
-  border-color: #1abc9c;
+  border-color: #1e699c;
 }
 .header-6-sub .signup-form form button {
   width: 23.5%;
@@ -2765,8 +2766,16 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   background-color: #246b9d;
 }
 /* header modification */
+.btn-wearhacks {
+  color: #ffffff;
+  background-color: #1e699c;
+  border-radius: 0px;
+}
 #navigationbar li.active a {
-  border-bottom: 4px solid #EEE;
+  border-bottom: 4px solid #1e699c;
+}
+#navigationbar li a {
+  color: #3a3a3c;
 }
 @media (min-width: 768px) {
   .loaded .header-6 .navbar {
@@ -2787,24 +2796,38 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 .header-6-sub .signup-form {
   margin-top: 5%;
 }
-.header-6-sub .background {
-  background-image: url(/images/bVsHTTk.jpg);
-  opacity: 0.56;
+.header-6-sub .lead {
+  font-size: 20px;
+  color: #3a3a3c;
+  font-weight: 200;
+}
+.header-6-sub .backgroundsplash {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: url(/images/splash.jpg) 50% 50% no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .header-6-sub .signup-form form .form-control {
   width: 70.0%;
 }
 .header-6-sub .signup-form form .form-control ::-webkit-input-placeholder {
-  color: #999;
+  color: #EEE;
 }
 .header-6-sub .signup-form form .form-control :-moz-placeholder {
-  color: #999;
+  color: #EEE;
 }
 .header-6-sub .signup-form form .form-control ::-moz-placeholder {
-  color: #999;
+  color: #EEE;
 }
 .header-6-sub .signup-form form .form-control :-ms-input-placeholder {
-  color: #999;
+  color: #EEE;
 }
 .header-6-sub .signup-form form button {
   width: 28%;
@@ -2839,10 +2862,10 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 }
 .logo-link {
   display: block;
-  padding-bottom: 53.125%;
+  padding-bottom: 85%;
   background: url(/images/front-in-poa.png) no-repeat;
   background-position: center;
-  background-size: 90%;
+  background-size: 70%;
 }
 @media screen and (min-width: 37.5rem) {
   .logo-link {
@@ -2876,6 +2899,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
     font-size: 17px;
     left: 0px;
     font-weight: 600;
+    background-image: url(images/horizontallogo.png);
   }
   #homebar img {
     margin: -11px 3px 0 0;
@@ -2887,9 +2911,13 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   }
   .loaded .header-6 .navbar .social-btns {
     margin-right: 10px;
+    color: #3a3a3c;
   }
   .loaded .header-6 .navbar .social-btns .social-holder {
     margin-left: 5px;
+  }
+  .loaded .header-6 .navbar .social-btns > * > *:first-child {
+    color: #3a3a3c;
   }
 }
 .main-title {

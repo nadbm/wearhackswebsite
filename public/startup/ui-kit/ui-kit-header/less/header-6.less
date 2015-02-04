@@ -49,7 +49,7 @@
             > * {
                 display: inline-block;
                 margin-left: 15px;
-                .font(16px, mix(#fff, black, 80%));
+                .font(16px, #1e699c);
                 width: 16px;
                 height: 19px;
                 overflow: hidden;
@@ -63,7 +63,7 @@
                     top:0;
                     .transition(0.25s top);
                     &:first-child {
-                        color: white;
+                        color: #3a3a3c;
                     }
                 }
                 &:hover > * {
@@ -71,6 +71,7 @@
                 }
             }
         }
+
         .nav {
             @media (min-width: 992px) {
                 position: absolute;
@@ -119,7 +120,7 @@
     overflow: hidden;
     padding-top:280px;
     padding-bottom:90px;
-    background-color: #192735;
+    background-color: whitesmoke;
     @media (max-width: 768px) {
         padding-top: 150px;
         padding-bottom: 50px;
@@ -201,7 +202,6 @@
         form {
             margin: 0 auto;
             padding: 17px;
-            .border-radius(6px);
             background: white;
             .form-control,
             button {
@@ -210,6 +210,8 @@
                 .box-sizing(border-box);
                 margin: 0 0 0 2%;
                 font-size: 17px;
+
+                .border-radius(0px);
                 font-weight: 500;
                 @media (max-width: 480px) {
                     width: 100%;
@@ -225,9 +227,11 @@
                 border-color: #dee1e3;
                 font-weight: 500;
                 color: @wet-asphalt;
-                .placeholder(@wet-asphalt);
+
+                border: 1px solid #bdc3c7;
+                .placeholder(#7f8c8d);
                 &:focus {
-                    border-color: #1abc9c;
+                    border-color: #1e699c;
                 }
             }
             button{
