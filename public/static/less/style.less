@@ -8,6 +8,7 @@
 @import '../../startup/ui-kit/ui-kit-header/less/header-2.less';
 @import '../../startup/ui-kit/ui-kit-header/less/header-6.less';
 @import '../../startup/ui-kit/ui-kit-header/less/header-10.less';
+@import '../../startup/ui-kit/ui-kit-header/less/header-16.less';
 @import '../../startup/ui-kit/ui-kit-content/less/content-23.less';
 @import '../../startup/ui-kit/ui-kit-content/less/content-15.less';
 @import '../../startup/ui-kit/ui-kit-content/less/content-13.less';
@@ -18,6 +19,70 @@
 @import '../../startup/ui-kit/ui-kit-footer/less/footer-7.less';
 @import '../../startup/ui-kit/ui-kit-footer/less/footer-4.less';
 @import '_partials_sponsors.less';
+
+
+@base: #f938ab;
+@wolf: #1e699c;
+@logoblack:#3a3a3c;
+//Century gothic 
+
+h1 {
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.3999996185303px;
+}
+
+h3,h2,h4 {
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.3999996185303px;
+}
+h5 {
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	text-align: center;
+	line-height: 20px;
+}
+h6 {
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	text-align: center;
+
+	line-height: 20px;
+}
+blockquote {
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+pre {
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714302062988px;
+}
+p {
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	color: @logoblack;
+	font-size:14px;
+}
 //Some custom classes
 .light-bg-link {
 	padding:10px;
@@ -35,10 +100,21 @@
 
 /* header modification */
 
-@base: #f938ab;
-@wolf: #1e699c;
-@logoblack:#3a3a3c;
+a{
+	color:@wolf;
+}
+a:hover {
+	color:mix(#fff, @wolf, 30%)
+}
+.wearhacks-header {
+	color: white;
+	background: @wolf;
+	padding: 10px 4px 10px 4px;
 
+	font-size: 20px;
+	font-weight: 200;
+	text-align:center;
+}
 
 .btn-wearhacks {
 	color: #ffffff;
@@ -124,6 +200,54 @@
 	}
 	
 }
+.scroll-btn {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top:10px;
+        text-align: center;
+        > * {
+            display: inline-block;
+            .line-height(18px);
+            .font(13px);
+            .a-color(white, white);
+            font-family: @font-family-demo;
+            letter-spacing: 1px;
+            &:hover, &:focus, &:active, &.active {
+                .opacity(80);
+            }
+        }
+        .mouse {
+            position: relative;
+            display: block;
+            width: 24px;
+            height: 36px;
+            margin: 0 auto 20px;
+            .box-sizing(border-box);
+            border: 2px solid @wolf;
+            border-radius: 23px;
+            > * {
+                position: absolute;
+                display: block;
+                top: 29%;
+                left: 50%;
+                width: 8px;
+                height: 8px;
+                margin: -4px 0 0 -4px;
+                background: @wolf;
+                border-radius: 50%;
+                -webkit-animation: ani-mouse 4s linear infinite;
+                -moz-animation: ani-mouse 4s linear infinite;
+                animation: ani-mouse 4s linear infinite;
+            }
+        }
+        @media (max-width: 480px) {
+            bottom: 41px;
+        }
+    }
+
+//About section
 #about {
 	h2 {
 		font-size: 25px;
@@ -139,6 +263,23 @@
 		background-size: 90%;
 		padding-bottom: 53.125%;
 		margin: 3.75rem auto;
+	}
+	p {
+		text-align: center;
+		text-justify: inter-word;
+		-moz-text-align-last: center;
+		text-align-last: right;
+		color: #666667;
+		font-size: 16px;
+	}
+	@media (max-width: 768px){ 
+		.seperator {
+			display: none;
+		}
+	}
+	.seperator {
+			height: 146px;
+		background: url(/images/seperator.png) center no-repeat;
 	}
 }
 
@@ -283,24 +424,22 @@ and (max-device-width : 568px)  {
 .projects-4 {	
 	
 	.ambassador {
-
-                text-align: center;
+				text-align: center;
                 margin-top: 48px;
-               
                 padding: 25px;
+
             .btnAmb {
-            	margin-top: 10px;
-				padding: 17px;
-				background-color: #008cba;
-				font-size: 15px;
-				font-weight: 200;
-				color: white;
-				display: block;
-				width: 200px;
-				margin: auto;
+            	font-size:2rem;
+            	color: @logoblack;
+            	border-radius: 6px;
+            	border: 2px solid @wolf;
+            	background-color: none;
+            	padding: 10px 50px 10px 50px;
             }
-            a:hover {
-            	background-color:#007298;
+            .btnAmb:hover {
+            	background-color: @wolf;
+            	color:white;
+
             }
 	}
 
@@ -314,34 +453,70 @@ and (max-device-width : 568px)  {
 }
 
 //footer 
-.footer-7 .social-btns {
-	position:relative;
-	text-align:center;
-	top:0px;
-	right:0px;
+
+.footer-7:before {
+		height:0px;
 }
-@media (max-width : 568px)  {
-	.footer-7 .social-btns {
-		position:relative;
-		text-align:center;
-		top:0px;
-		margin-left:0px;
+.footer-7 {
+	padding-top:100px;
+	.scroll-top {
+		background-color: none;
+		border-radius:50%;
+		border:2px solid @wolf;
+		width: 50px;
+		height: 50px;
+		font-size: 30px;
+		padding-top: 10px;
+		span { color:@wolf;}
+		margin:auto;
+		margin-top:8rem;
+
+	}
+	.scroll-top:hover {
+		background-color: @wolf;
+		border-radius:50%;
+		border:2px solid @wolf;
+		span { color:white;}
+	}
+	.social {
+		
+		font-size: 3.5rem;
+		 list-style-type: none;
+		 li{
+		 	a {
+		 	color:@wolf;
+
+		 	}
+		 	a:hover {
+		 	color: mix(@wolf,white,90%);
+		 	}
+		 	float:left;
+		 	margin-left:50px;
+		 	margin: 0px 40px 0px 40px;
+		 }
 	}
 
-}
-.footer-7:before{
-	height:0;
-}
-.footer-7{ 
-padding-top: 90px;
-p {
-   color: #333;
-}
+	ul, li { margin-left: 0; padding-left: 0; list-style-type: none }
 }
 
-//Header-10 addition
+//Wearhacks hackathon (about us)
 
 .header-10-sub {
+	.smallsep {
+		width: 2rem;
+		height: 0.6rem;
+		background-color: white;
+		margin: auto;
+		border-radius: 4px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.maindesc {
+		padding-top:5rem;
+		padding-bottom:5rem;
+		color:white;
+		line-height:25px;
+	}
 	ul, li { margin-left: 0; padding-left: 0; list-style-type: none }
 	.unique li {
 	width: 25%;
@@ -352,9 +527,11 @@ p {
 	h5{
 	color:white;
 	}
+
 	.uniqueIcon {
 		width: 100%;
-		height: 100px;
+		height: 50px;
+		margin-bottom:5rem;
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -445,7 +622,8 @@ p {
 
 //Montreal event
 #pastevent{
-	background:#074e68;
+	background:url(/images/splash.jpg) 50% 50% no-repeat;
+	
 .header{
 	background: #085a78;
 	color: white;
@@ -453,6 +631,7 @@ p {
 	padding: 20px;
 }
 .event-montreal {
+			color:@logoblack;
 			border-radius:20px;
 			padding-top:20px;
 			padding-bottom:20px;
@@ -464,26 +643,18 @@ p {
 
 			.stats {
 				margin: auto;
-				width: 482px;
-			}
-			h4 {
-				color:white;
+				width: 420px;
 			}
 			a {
 
 				
-				color:white;
-			}
-			a:hover {
-				p,h4 {
-				color:whitesmoke;
-				}
-
+				color:@logoblack;
 			}
 			
 			.title {
-				margin-top:20px;
-				p{font-weight:100; color:#CCC}
+				margin-top:2rem;
+				margin-bottom:6rem;
+				p{font-weight:100; }
 			}
 			.circle {
 			border-radius: 50%;
@@ -501,14 +672,12 @@ p {
 			padding: 6px;
 			text-align: center;
 			font-weight: 200;
-			color: rgb(184, 182, 182);
 		}
 		.description {
 			margin-top:20px;
 			margin-bottom:50px;
 			p {
-				color:white;
-				font-weight:100;
+				font-weight:100; font-size:14px;
 			}
 		}
 		@media only screen 
@@ -566,6 +735,119 @@ p {
 	}
 		
 
+}
+
+#contact{
+text-align: center;
+
+.logo {
+	width:27rem;
+}
+#newsletterform {
+	margin-top:20px;
+		padding: 10px;
+	background: white;
+}
+.signup-form button {
+	float: left;
+width: 23.5%;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+margin: 0 0 0 2%;
+font-size: 17px;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+font-weight: 500;
+}
+
+   .signup-form {
+        form {
+            margin: 0 auto;
+            padding: 17px;
+            background: white;
+            .form-control,
+            button {
+                float: left;
+                width: 23.5%;
+                .box-sizing(border-box);
+                margin: 0 0 0 2%;
+                font-size: 17px;
+
+                .border-radius(0px);
+                font-weight: 500;
+                @media (max-width: 480px) {
+                    width: 100%;
+                    margin: 10px 0 0;
+                    display: block;
+                    float: none;
+                }
+                &:first-child {
+                    margin: 0;
+                }
+            }
+            .form-control {
+            	width:70%;
+                border-color: #dee1e3;
+                font-weight: 500;
+                color: @wet-asphalt;
+
+                border: 1px solid #bdc3c7;
+                .placeholder(#7f8c8d);
+                &:focus {
+                    border-color: #1e699c;
+                }
+            }
+            button{
+              width: 23.5%;
+              margin-left: 2%;
+              @media (max-width: 480px) {
+                width: 100%;
+                margin: 10px 0 0;
+                display: block;
+                float: none;
+              }
+            }
+        }
+    }
+.signup-form form {
+
+		.form-control {
+			
+		
+			::-webkit-input-placeholder {
+			    color:    #EEE;
+			}
+			:-moz-placeholder {
+			    color:    #EEE;
+			}
+			::-moz-placeholder {
+			    color:    #EEE;
+			}
+			:-ms-input-placeholder {
+			    color:    #EEE;
+			}
+		}
+		button {
+				width:28%;
+			}
+		@media (max-width: 480px){ 
+			.form-control {
+				width:100%;
+			}
+			
+			button {
+				width:100%;
+			}
+		}
+	}
+
+	background:url(/images/splash.jpg) 50% 50% no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 }
 
 
