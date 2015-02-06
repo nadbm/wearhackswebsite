@@ -373,7 +373,79 @@ and (max-device-width : 568px)  {
 	margin-bottom: 40px;
 }
 }
+#team {
+	.page {
+		padding-left: 50px;
+padding-right: 50px;
 
+	}
+	.member {
+		width:33%;
+		float:left;
+	}
+	.info {
+		margin:auto;
+	}
+	.photo {
+		background-image: url(/images/ari.jpeg);
+		background-size: contain;
+		height: 150px;
+		width:150px;
+		border-radius: 50%;
+		background-repeat: no-repeat;
+		margin:auto;
+		margin-bottom: 17px;
+	}
+	.name {
+		font-size: 16px;
+		font-weight: bold;
+		text-align: center;
+		color:@logoblack;
+		margin-bottom:1rem;
+	}
+	.position {
+		font-size: 11px;
+		font-style: italic;
+		text-align: center;
+		margin-bottom:1rem;
+	}
+
+	.social-btns {
+		text-align:center;
+        white-space: nowrap;
+        > * {
+            display: inline-block;
+            margin-left: 15px;
+            .font(20px, @wolf);
+            width: 20px;
+            height: 25px;
+            overflow: hidden;
+            text-align: center;
+            @media (max-width: 480px) {
+                margin-top: 15px;
+                margin-bottom: 7px;
+            }
+            &:first-child {
+                margin-left: 0;
+            }
+            > * {
+                display: block;
+                position: relative;
+                top: 0;
+                .transition(0.25s top);
+                &:first-child {
+                    color: mix(white,@wolf,40%);
+                }
+            }
+            &:hover > * {
+                top: -100%;
+            }
+        }
+        .fui-twitter:first-child {
+            margin-top: 2px;
+        }
+    }
+}
 .crew-2 {
 	padding-top:50px;
 	.members {
@@ -620,7 +692,13 @@ and (max-device-width : 568px)  {
 }
 }
 
-
+.bg-splash {
+	background:url(/images/splash.jpg) 50% 50% no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+}
 //Montreal event
 #pastevent{
 	background:url(/images/splash.jpg) 50% 50% no-repeat;
@@ -850,5 +928,4 @@ font-weight: 500;
 		-o-background-size: cover;
 		background-size: cover;
 }
-
 

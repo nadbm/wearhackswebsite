@@ -17,7 +17,10 @@
  }(jQuery));
 
 
-
+//slider
+$(document).ready(function(){
+  $('#teamslider').bxSlider();
+});
 //Smooth Scroll
 
 $(function() {
