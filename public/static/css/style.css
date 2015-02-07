@@ -3330,6 +3330,9 @@ a:hover {
     top: 20px;
   }
 }
+.navbar .navbar-toggle {
+  color: black;
+}
 .content-15 {
   background-color: #F7F7F7;
   padding-bottom: 20px;
@@ -3766,8 +3769,7 @@ a:hover {
 }
 .footer-7 .social li {
   float: left;
-  margin-left: 50px;
-  margin: 0px 40px 0px 40px;
+  width: 33%;
 }
 .footer-7 .social li a {
   color: #1e699c;
@@ -3979,6 +3981,7 @@ a:hover {
   background-size: 120%;
   background-position: 50%;
   background-repeat: no-repeat;
+  margin-top: 1rem;
 }
 .wearhackevents .info {
   font-size: 2.5rem;
