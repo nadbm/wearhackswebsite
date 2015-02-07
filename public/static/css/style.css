@@ -3246,6 +3246,10 @@ h4 {
   font-weight: 500;
   line-height: 15.3999996185303px;
 }
+h2 {
+  font-size: 18px;
+  text-align: center;
+}
 h5 {
   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
   font-style: normal;
@@ -3713,6 +3717,11 @@ a:hover {
   border: 2px solid #1e699c;
   background-color: none;
   padding: 10px 50px 10px 50px;
+}
+@media (max-width: 568px) {
+  .projects-4 .ambassador .btnAmb {
+    font-size: 14px;
+  }
 }
 .projects-4 .ambassador .btnAmb:hover {
   background-color: #1e699c;

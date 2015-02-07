@@ -43,6 +43,10 @@ h3,h2,h4 {
 	font-weight: 500;
 	line-height: 15.3999996185303px;
 }
+h2 {
+	font-size: 18px;
+	text-align:center;
+}
 h5 {
 	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 	
@@ -539,6 +543,11 @@ and (max-device-width : 568px)  {
             	border: 2px solid @wolf;
             	background-color: none;
             	padding: 10px 50px 10px 50px;
+            }
+            @media (max-width : 568px) {
+            	.btnAmb {
+            		font-size: 14px;
+            	}
             }
             .btnAmb:hover {
             	background-color: @wolf;
