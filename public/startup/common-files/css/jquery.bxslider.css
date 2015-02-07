@@ -19,6 +19,8 @@
 	margin: 0 auto 60px;
 	padding: 0;
 	*zoom: 1;
+
+	margin-top: 70px;
 }
 
 .bx-wrapper img {
@@ -34,10 +36,8 @@
 	//-webkit-box-shadow: 0 0 5px #ccc;
 	box-shadow: 0 0 5px #ccc;
 	border: solid #fff 5px;
-	
-	background: #fff;**/
-
 	left: -5px;
+	background: #fff;**/
 }
 
 .bx-wrapper .bx-pager,
@@ -99,32 +99,39 @@
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
 .bx-wrapper .bx-prev {
-	left: 10px;
-	background: url(images/controls.png) no-repeat 0 -32px;
+	right: 50%;
+	text-align: center;
+	color:#3a3a3c;
+	background-color:none;
 }
 
 .bx-wrapper .bx-next {
-	right: 10px;
-	background: url(images/controls.png) no-repeat -43px -32px;
+	left: 50%;
+	text-align: center;	
+	color:#3a3a3c;
+	background-color:none;
+
 }
 
 .bx-wrapper .bx-prev:hover {
-	background-position: 0 0;
+	color:white;
+	background-color:#1e699c;
 }
 
 .bx-wrapper .bx-next:hover {
-	background-position: -43px 0;
+	color:white;
+	background-color:#1e699c;
 }
 
 .bx-wrapper .bx-controls-direction a {
 	position: absolute;
-	top: 50%;
+	top: -15%;
 	margin-top: -16px;
 	outline: 0;
 	width: 32px;
-	height: 32px;
-	text-indent: -9999px;
-	z-index: 9999;
+	height: 30px;
+	padding-top:5px;
+	
 }
 
 .bx-wrapper .bx-controls-direction a.disabled {

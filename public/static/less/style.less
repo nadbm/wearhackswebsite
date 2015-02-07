@@ -374,13 +374,43 @@ and (max-device-width : 568px)  {
 }
 }
 #team {
-	.page {
-		padding-left: 50px;
-padding-right: 50px;
+	.page-1 {
+		.member {
+			width:50%;
+		}
+	}
+	.page-2 {
 
+		.member {
+			width:25%;
+		}
+		@media (max-width: 768px) {
+			.member {
+			width:50%;
+			.name {
+				height:30px;
+			}
+		}
+		}
+	}
+	.page-3 {
+		.member {
+			width:33%;
+		}
+		@media (max-width: 768px) {
+			.member {
+			width:50%;
+			.name {
+				height:30px;
+			}
+		}
+			.standalone {
+				width:100%;
+			}
+		}
 	}
 	.member {
-		width:33%;
+		
 		float:left;
 	}
 	.info {
@@ -389,8 +419,8 @@ padding-right: 50px;
 	.photo {
 		background-image: url(/images/ari.jpeg);
 		background-size: contain;
-		height: 150px;
-		width:150px;
+		height: 120px;
+		width:120px;
 		border-radius: 50%;
 		background-repeat: no-repeat;
 		margin:auto;
@@ -401,10 +431,12 @@ padding-right: 50px;
 		font-weight: bold;
 		text-align: center;
 		color:@logoblack;
-		margin-bottom:1rem;
+		margin-bottom:10px;
+		height:60px;
 	}
 	.position {
 		font-size: 11px;
+		font-weight: 200;
 		font-style: italic;
 		text-align: center;
 		margin-bottom:1rem;
