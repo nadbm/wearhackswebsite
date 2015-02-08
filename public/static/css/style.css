@@ -3569,29 +3569,18 @@ a:hover {
 #team .page-1 .member {
   width: 50%;
 }
-#team .page-2 .member {
+#team .page-2 .member,
+#team .page-3 .member {
   width: 25%;
 }
 @media (max-width: 768px) {
-  #team .page-2 .member {
-    width: 50%;
-  }
-  #team .page-2 .member .name {
-    height: 30px;
-  }
-}
-#team .page-3 .member {
-  width: 33%;
-}
-@media (max-width: 768px) {
+  #team .page-2 .member,
   #team .page-3 .member {
     width: 50%;
   }
+  #team .page-2 .member .name,
   #team .page-3 .member .name {
     height: 30px;
-  }
-  #team .page-3 .standalone {
-    width: 100%;
   }
 }
 #team .member {
