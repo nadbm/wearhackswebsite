@@ -3228,6 +3228,9 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
     min-width: rem(100px);
   }
 }
+html {
+  font-size: 62.5%;
+}
 h1 {
   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
   font-size: 24px;
@@ -3347,8 +3350,8 @@ a:hover {
 .header-6-sub .signup-form {
   margin-top: 5%;
 }
-.header-6-sub .lead {
-  font-size: 20px;
+.header-6-sub .leadcustom {
+  font-size: 1.5rem;
   color: #3a3a3c;
   font-weight: 200;
 }
@@ -3566,12 +3569,21 @@ a:hover {
     margin-bottom: 40px;
   }
 }
+#team .members {
+  width: 80%;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  #team .members {
+    width: 100%;
+  }
+}
 #team .page-1 .member {
   width: 50%;
 }
 #team .page-2 .member,
 #team .page-3 .member {
-  width: 25%;
+  width: 33%;
 }
 @media (max-width: 768px) {
   #team .page-2 .member,
@@ -3581,6 +3593,10 @@ a:hover {
   #team .page-2 .member .name,
   #team .page-3 .member .name {
     height: 30px;
+  }
+  #team .page-2 .alone,
+  #team .page-3 .alone {
+    width: 100%;
   }
 }
 #team .member {
@@ -3633,6 +3649,7 @@ a:hover {
   #team .social-btns > * {
     margin-top: 15px;
     margin-bottom: 7px;
+    margin-left: 3px;
   }
 }
 #team .social-btns > *:first-child {

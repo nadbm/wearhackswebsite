@@ -383,6 +383,17 @@ and (max-device-width : 568px)  {
 }
 }
 #team {
+	.members {
+		width:80%;
+		margin:auto;
+	}
+	@media (max-width: 768px) {
+
+		.members {
+			width:100%;
+			
+		}
+		}
 	.page-1 {
 		
 		.member {
@@ -392,15 +403,20 @@ and (max-device-width : 568px)  {
 	.page-2,.page-3 {
 
 		.member {
-			width:25%;
+			width:33%;
 		}
 		@media (max-width: 768px) {
+
 			.member {
 			width:50%;
 			.name {
 				height:30px;
 			}
-		}
+			
+			}
+			.alone {
+				width:100%;
+			}
 		}
 	}
 	
@@ -451,6 +467,7 @@ and (max-device-width : 568px)  {
             @media (max-width: 480px) {
                 margin-top: 15px;
                 margin-bottom: 7px;
+                margin-left: 3px;
             }
             &:first-child {
                 margin-left: 0;
