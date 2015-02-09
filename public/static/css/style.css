@@ -3862,7 +3862,7 @@ a:hover {
   padding-top: 15%;
 }
 .mediaoverlay:hover {
-  background-color: rgba(39, 194, 176, 0.8);
+  background-color: rgba(30, 105, 156, 0.6);
   opacity: 1.0;
   -webkit-transition: background-color 500ms linear;
   -moz-transition: background-color 500ms linear;
@@ -3887,6 +3887,7 @@ a:hover {
   font-size: 12px;
   text-align: center;
   font-weight: 200;
+  color: white;
 }
 @media (max-width: 568px) {
   .medias li {
@@ -3990,16 +3991,21 @@ a:hover {
   margin-top: 1rem;
 }
 .wearhackevents .info {
+  margin-top: 1rem;
   font-size: 2.5rem;
-  font-weight: 100;
+  font-weight: 200;
   color: white;
   height: 100%;
   text-align: center;
-  padding-top: 18px;
+  padding-top: 17%;
   background-color: rgba(0, 0, 0, 0.5);
 }
 .wearhackevents .info span {
   opacity: 0.5;
+}
+.wearhackevents .sub {
+  font-size: 1.5rem;
+  font-weight: 100;
 }
 .wearhackevents .info:hover {
   background-color: rgba(0, 0, 0, 0);
