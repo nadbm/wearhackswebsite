@@ -3362,7 +3362,7 @@ a:hover {
   right: 0;
   bottom: 0;
   z-index: 1;
-  background: url(/images/splash.jpg) 50% 50% no-repeat;
+  background: url(/images/splash.png) 50% 50% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -3907,14 +3907,14 @@ a:hover {
   }
 }
 .bg-splash {
-  background: url(/images/splash.jpg) 50% 50% no-repeat;
+  background: url(/images/splash.png) 50% 50% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #pastevent {
-  background: url(/images/splash.jpg) 50% 50% no-repeat;
+  background: url(/images/splash.png) 50% 50% no-repeat;
 }
 #pastevent .header {
   background: #085a78;
@@ -4025,7 +4025,7 @@ a:hover {
 }
 #contact {
   text-align: center;
-  background: url(/images/splash.jpg) 50% 50% no-repeat;
+  background: url(/images/splash.png) 50% 50% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
