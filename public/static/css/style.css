@@ -3151,10 +3151,10 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   min-width: rem(100px);
 }
 .partner-item-optimus {
-  width: 30%;
+  width: 45%;
   margin: 0 .5% 2% 2%;
   padding: 0.5% 0.5% 0.5% 0.5%;
-  min-width: rem(100px);
+  min-width: rem(150px);
   margin-left: auto;
   margin-right: auto;
   display: inline-block;
