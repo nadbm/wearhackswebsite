@@ -824,7 +824,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   color: #fff;
 }
 /**
- * Header 2 stylesheet
+ * Header 2 stylesheet  
  * */
 .header-2 {
   z-index: 100;
@@ -974,7 +974,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   background-color: #a33025;
 }
 /**
- * Header 6 stylesheet
+ * Header 6 stylesheet  
  * */
 .header-6 {
   z-index: 100;
@@ -1315,7 +1315,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   filter: alpha(opacity=0);
 }
 /**
- * Header 10 stylesheet
+ * Header 10 stylesheet  
  * */
 .header-10 {
   z-index: 100;
@@ -1559,7 +1559,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   }
 }
 /**
- * Header 16 stylesheet
+ * Header 16 stylesheet  
  * */
 .header-16 {
   padding-top: 0;
@@ -2173,7 +2173,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   }
 }
 /**
- * Content 15 stylesheet
+ * Content 15 stylesheet  
  * */
 .content-15 {
   padding-top: 125px;
@@ -2247,7 +2247,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   }
 }
 /**
- * Content 13 stylesheet
+ * Content 13 stylesheet  
  * */
 .content-13 {
   position: relative;
@@ -2402,7 +2402,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   }
 }
 /**
- * Crew 2 stylesheet
+ * Crew 2 stylesheet  
  * */
 .crew-2 {
   padding-top: 110px;
@@ -2617,7 +2617,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   }
 }
 /**
- * Project 3 stylesheet
+ * Project 3 stylesheet  
  * */
 .projects-3 {
   padding-top: 110px;
@@ -2755,7 +2755,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   }
 }
 /**
- * Project 4 stylesheet
+ * Project 4 stylesheet  
  * */
 .projects-4 {
   padding-top: 110px;
@@ -2867,7 +2867,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   }
 }
 /**
- * Footer 7 stylesheet
+ * Footer 7 stylesheet  
  * */
 .footer-7 {
   padding-top: 150px;
@@ -3064,7 +3064,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   }
 }
 /**
- * Footer 4 stylesheet
+ * Footer 4 stylesheet  
  * */
 .footer-4 {
   padding-top: 20px;
@@ -3108,8 +3108,6 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   width: 20%;
   margin: 0 .5% 2% .5%;
   min-width: rem(150px);
-  margin-left: auto;
-  margin-right: auto;
   display: inline-block;
 }
 .partner-item-singularity {
@@ -3151,16 +3149,16 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   min-width: rem(100px);
 }
 .partner-item-optimus {
-  width: 45%;
+  width: 30%;
   margin: 0 .5% 2% 2%;
   padding: 0.5% 0.5% 0.5% 0.5%;
-  min-width: rem(150px);
+  min-width: rem(100px);
   margin-left: auto;
   margin-right: auto;
-  display: inline-block;
+  display: block;
 }
 .partner-item-singularity {
-  width: 50%;
+  width: 40%;
   min-width: rem(100px);
 }
 .sponsor-logo,
@@ -3917,6 +3915,7 @@ a:hover {
 }
 #pastevent {
   background: url(/images/splash.png) 50% 50% no-repeat;
+  background-size: cover;
 }
 #pastevent .header {
   background: #085a78;
